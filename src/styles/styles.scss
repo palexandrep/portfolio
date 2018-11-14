@@ -1,2 +1,16 @@
-@import "variable.scss";
+@import "variables.scss";
+
+@import "components/portrait.scss";
+
+// global settings
+
+body{
+    background-color: $bgc-col;
+}
+
+span{
+    display: block;
+}
+
+
 

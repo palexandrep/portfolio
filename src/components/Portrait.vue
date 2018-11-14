@@ -1,6 +1,8 @@
 <template>
   <div>
-    <h1>hello</h1>
+    <span class="portrait--elipse">
+      <span class="elipse--electron"></span>
+    </span>
   </div>
 </template>
 
@@ -9,7 +11,3 @@ export default {
   name: 'Portrait',
 }
 </script>
-
-<style scoped lang="scss">
-
-</style>
