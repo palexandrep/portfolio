@@ -1,11 +1,16 @@
+@import "normalize.scss";
+@import "flexboxgrid.scss";
 @import "variables.scss";
 
-@import "components/portrait.scss";
+@import "components/Portrait/portrait.scss";
+@import "components/Portrait/atom.scss";
+@import "components/title.scss";
 
 // global settings
 
 body{
     background-color: $bgc-col;
+    margin: 0;
 }
 
 span{

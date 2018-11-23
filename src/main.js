@@ -2,6 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
+import anime from 'animejs'
 
 Vue.config.productionTip = false
 

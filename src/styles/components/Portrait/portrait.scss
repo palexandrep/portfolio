@@ -1,0 +1,18 @@
+.container--portrait{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width: 310px;
+  height: 345px;
+  transform: scale(0.5);
+}
+
+.portrait-img{
+    position: absolute;
+    z-index: 2;
+    width: 80px;
+    //clip-path: polygon(6% 75%, 50% 100%, 94% 75%,94% 25%,50% 0%,6% 25%);
+    border-radius: 100%;
+  }
+
