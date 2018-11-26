@@ -20,3 +20,14 @@ export function growItem(el,time,scale, elasticity){
         elasticity: elasticity
     });
 }
+
+export function slideMenu(el,time,translate,easing, elasticity){
+    anime.remove(el);
+    var slide = anime({
+        targets: el,
+        duration: time,
+        translateX: translate+'%',
+        easing: easing,
+        elasticity: elasticity
+    });
+}

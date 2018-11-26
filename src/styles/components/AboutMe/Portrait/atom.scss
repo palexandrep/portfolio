@@ -1,0 +1,12 @@
+.atom--elipse{
+  fill:none;
+  stroke: $mid-col;
+  stroke-width:3;
+  stroke-miterlimit:10;
+}
+  
+.atom--circle{
+  width: 30px;
+  height: 30px;
+  fill: $mid-col;
+}

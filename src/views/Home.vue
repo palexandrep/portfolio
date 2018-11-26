@@ -1,20 +1,26 @@
 <template>
   <div class="home row">
-    <Portrait class="col-xs-12 col-md-10 col-lg-2"/>
+    <Header/>
+    <Portrait/>
     <Title/>
+    <DNA/>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import Portrait from '@/components/Portrait/Portrait.vue'
+import Header from '@/components/Header/Header.vue'
+import Portrait from '@/components/AboutMe/Portrait/Portrait.vue'
 import Title from '@/components/Title.vue'
+import DNA from '@/components/DNA.vue'
 
 export default {
   name: 'home',
   components: {
+    Header,
     Portrait,
-    Title
+    Title,
+    DNA
   }
 }
 </script>

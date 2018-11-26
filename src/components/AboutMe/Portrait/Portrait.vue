@@ -7,7 +7,7 @@
 
 <script>
 
-import atom from '@/components/Portrait/atom.vue'
+import atom from '@/components/AboutMe/Portrait/atom.vue'
 import anime from 'animejs'
 import {growItem} from '@/assets/js/animeFunctions'
 
@@ -18,10 +18,10 @@ export default {
   },
   methods:{
     animateGrow: function(){
-      growItem('.portrait-img', 1000, 2.5, 600)
+      growItem('.portrait-img', 1500, 2.5, 500)
     },
     animateShrink: function(){
-      growItem('.portrait-img', 500, 1, 500)
+      growItem('.portrait-img', 1000, 1, 500)
     },
   }
 }

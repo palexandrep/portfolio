@@ -1,0 +1,24 @@
+@font-face {
+    font-family: "Anton";
+    src: url("assets/fonts/Anton/Anton-Regular.woff2") format("woff2"),
+         url("assets/fonts/Anton/Anton-Regular.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "Poiret One";
+    src: url("assets/fonts/Poiret_One/PoiretOne-Regular.woff2") format("woff2"),
+         url("assets/fonts/Poiret_One/PoiretOne-Regular.ttf") format("ttf");
+}
+
+
+.title{
+    font-family: $anton;
+}
+
+.title__white, .text__white{
+    color: $white-col_pale;
+}
+
+.title__mid-color, .text__mid-color{
+    color: $mid-col;
+}

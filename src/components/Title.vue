@@ -1,6 +1,6 @@
 <template>
   <div class="container-section-title">
-    <h3 class="section-title title">{{title}}</h3>
+    <h3 class="section-title title">{{title[0]}}</h3>
 
   </div>
 </template>
@@ -14,7 +14,14 @@ export default {
   name: 'Title',
   data: function(){
     return{
-      title: 'hello'
+      title: [
+        'ABOUT ME',
+        'MY SKILLS',
+        'MY EXPERIENCES',
+        'MY DIPLOMA',
+        'MY WORK',
+        'CONTACT'
+      ]
     }
   }
 }
