@@ -1,0 +1,44 @@
+button:focus{
+    outline: 0;
+}
+
+.btn--fill{
+    fill: $white-col;
+    cursor: pointer;
+    &:active{
+        fill: $white-col_pale;
+    }
+}
+
+.container-btn{
+    position: relative;
+}
+
+.btn-text{
+    position: absolute;
+}
+
+.btn__down-arrow{
+    &:hover{
+        cursor: pointer;
+    }
+
+    height: 30px;
+    width: 30px;
+
+
+    .down-arrow--item{
+        width: 30px;
+        height: 2px;
+        background-color: $mid-col;
+        float: left;
+    }
+
+    .down-arrow--item__left{
+        transform: rotate(35deg);
+    }
+
+    .down-arrow--item__right{
+        transform: rotate(-35deg);
+    }
+}

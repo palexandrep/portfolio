@@ -12,13 +12,40 @@
 
 
 .title{
-    font-family: $anton;
+    //font-family: 'Comfortaa', cursive;
+    //font-family: 'Heebo', sans-serif;
+    //font-family: 'Hind Madurai', sans-serif;
+    //font-family: 'Merriweather Sans', sans-serif;
+    //font-family: 'Black Han Sans', sans-serif;
+    //font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    //font-family: 'Source Sans Pro', sans-serif;
+    //font-family: 'Raleway', sans-serif;
+    //font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    margin: 0;
+}
+
+.text{
+    font-family: "Poiret One", sans-serif;
+}
+
+.title__big{
+    font-size: 30px;
+    margin-left: 100px;
 }
 
 .title__white, .text__white{
-    color: $white-col_pale;
+    color: $white-col;
 }
 
 .title__mid-color, .text__mid-color{
     color: $mid-col;
+}
+
+.container--sub-title{
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    background-color: $bgc-col_pale;
 }

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 28.6 38.1" style="enable-background:new 0 0 28.6 38.1;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;}
+	.st1{fill:#0B0F1D;}
+	.st2{fill:url(#XMLID_135_);}
+</style>
+<pattern  x="-472.7" y="-279.9" width="87.1" height="80.8" patternUnits="userSpaceOnUse" id="coul1" viewBox="0 -80.8 87.1 80.8" style="overflow:visible;">
+	<g id="XMLID_20_">
+		<polygon id="XMLID_22_" class="st0" points="0,-80.8 87.1,-80.8 87.1,0 0,0 		"/>
+		<polygon id="XMLID_21_" class="st1" points="87.1,0 0,0 0,-80.8 87.1,-80.8 		"/>
+	</g>
+</pattern>
+<pattern  id="XMLID_135_" xlink:href="#coul1" patternTransform="matrix(1 0 0 1 362.7559 -1419.7927)">
+</pattern>
+<path id="XMLID_2245_" class="st2" d="M27.9,19.7c-0.5-0.5-1-0.7-1.7-0.7H7.9v-7.9c0-1.8,0.6-3.2,1.9-4.5c1.2-1.2,2.7-1.9,4.5-1.9
+	c1.8,0,3.2,0.6,4.5,1.9c1.2,1.2,1.9,2.7,1.9,4.5c0,0.4,0.2,0.8,0.5,1.1c0.3,0.3,0.7,0.5,1.1,0.5h1.6c0.4,0,0.8-0.2,1.1-0.5
+	c0.3-0.3,0.5-0.7,0.5-1.1c0-3.1-1.1-5.7-3.3-7.8C19.9,1.1,17.3,0,14.3,0c-3.1,0-5.7,1.1-7.8,3.3C4.3,5.4,3.2,8,3.2,11.1V19H2.4
+	c-0.7,0-1.2,0.2-1.7,0.7S0,20.8,0,21.4v14.3c0,0.7,0.2,1.2,0.7,1.7c0.5,0.5,1,0.7,1.7,0.7h23.8c0.7,0,1.2-0.2,1.7-0.7
+	c0.5-0.5,0.7-1,0.7-1.7V21.4C28.6,20.8,28.3,20.2,27.9,19.7z"/>
+</svg>

@@ -3,18 +3,21 @@
 @import "variables.scss";
 
 @import "text.scss";
+@import "components/sectionHeader.scss";
+
 @import "components/AboutMe/Portrait/portrait.scss";
 @import "components/AboutMe/Portrait/atom.scss";
-@import "components/title.scss";
-@import "components/MySkills/dna.scss";
-@import "components/Header/Menu/menu.scss";
-@import "components/Header/Menu/burger.scss";
+
+@import "components/MySkills/MainSkills/dna.scss";
+@import "components/MySkills/SubSkills/subskillitem.scss";
+@import "components/Nav/menu.scss";
+@import "components/Nav/burger.scss";
+@import "components/Button.scss";
+@import "components/Header/header.scss";
 
 // global settings
 
 #app {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
     padding: 0;
     margin: 0;
 }
@@ -34,6 +37,10 @@ ul {
     li {
         list-style-type: none;
     }
+}
+
+p{
+    margin: 0;
 }
 
 .active {

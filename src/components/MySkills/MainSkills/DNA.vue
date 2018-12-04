@@ -1,5 +1,5 @@
 <template>
-  <div class="dna">
+  <div class="container--dna">
     <div class="box box--top"></div>
     <!--<div class="container-message">
         <p>Sequencing data</p>
@@ -20,7 +20,7 @@ export default {
   name: 'DNA',
   data: function(){
     return{
-      dnaLenght: 40
+      dnaLenght: 10
     }
   },
   methods:{

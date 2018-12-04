@@ -1,8 +1,9 @@
 <template>
-  <div class="menu__mobile">
-    <Burger/>
-    <span class="background-filter"></span>
-    <button v-on:click="animateMenu">push</button>
+  <nav class="container--menu__mobile">
+    <div class="container-burger">
+      <Burger/>
+    </div>
+    <span class="bg-filter"></span>
     <ul class="container-menu container-menu__mobile">
       <li class="menu--item text__mid-color">
         <span class="square"></span>
@@ -29,14 +30,13 @@
         <h3>{{menuItem.contact.name}}</h3>
       </li>
     </ul>
-  </div>
+  </nav>
 </template>
 
 <script>
 
-import Burger from '@/components/Header/Menu/Burger.vue'
-import anime from 'animejs'
-import {slideMenu} from '@/assets/js/animeFunctions.js'
+import Burger from '@/components/Nav/Burger.vue'
+import { mapGetters } from 'vuex'
 
 export default {
   name: 'MobileMenu',
@@ -77,21 +77,28 @@ export default {
           closed: false
         }
       },
-      menuActif: false
+      //menuActif: false
+    }
+  },
+  computed:{
+
+    ...mapGetters({
+      myState: 'getMyState'
+    }),
+
+    myState(){
+      alert('ok')
+    },
+    ActiveFilterMenu: function(){
+      console.log(this.myState)
+      alert('ok')
+      const filter = document.querySelectorAll('.menu--blur-filter');
+      if(this.$store.state.menu.menuActif === true){
+        filter.classList.add('menu--blur-filter__active');
+      }
     }
   },
   methods:{
-    animateMenu: function(){
-      //el,time,translate,easing,elasticity
-      if(this.menuActif === false){
-        slideMenu('.container-menu__mobile', 200, -100,'easeInQuad',500)
-        this.menuActif = true
-      }
-      else{
-        slideMenu('.container-menu__mobile', 200, 100,'easeInQuad',500)
-        this.menuActif = false
-      }
-    }
   }
 }
 </script>

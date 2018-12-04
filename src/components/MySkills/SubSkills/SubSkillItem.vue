@@ -1,0 +1,86 @@
+<template>
+    <ul>
+        <li v-for="item in items" v-bind:item="item" v-bind:key="item.id" class="container--sub-skill-item">
+            <h5 class="title title__white title__sub-skill">{{item.subSkill.title}}</h5>
+            <div class="sub-skill-item-type">{{item.subSkill.type}}</div>
+        </li>
+    </ul>
+</template>
+
+<script>
+
+export default {
+  name: 'SubSkillItem',
+  data: function(){
+        return{
+            items: [
+                {subSkill:{
+                    title: 'SCSS',
+                    type: '1'
+                    }
+                },
+                {subSkill:{
+                    title: 'BEM',
+                    type: '1'
+                    }
+                },
+                {subSkill:{
+                    title: 'VUE JS',
+                    type: '2'
+                    }
+                },
+                {subSkill:{
+                    title: 'REACT',
+                    type: '2'
+                    }
+                },
+                {subSkill:{
+                    title: 'AJAX',
+                    type: '2'
+                    }
+                },
+                {subSkill:{
+                    title: 'JQUERY',
+                    type: '2'
+                    }
+                },
+                {subSkill:{
+                    title: 'ATOMIC DESIGN',
+                    type: '3'
+                    }
+                },
+                {subSkill:{
+                    title: 'WIREFRAME',
+                    type: '3'
+                    }
+                },
+                {subSkill:{
+                    title: 'WORDPRESS',
+                    type: '5'
+                    }
+                },
+                {subSkill:{
+                    title: 'PERSONAS',
+                    type: '3'
+                    }
+                },
+                {subSkill:{
+                    title: 'WEBPACK',
+                    type: '4'
+                    }
+                },
+                {subSkill:{
+                    title: 'GIT',
+                    type: '4'
+                    }
+                },
+                {subSkill:{
+                    title: 'PHP',
+                    type: '5'
+                    }
+                },
+            ]
+        }
+    }
+}
+</script>

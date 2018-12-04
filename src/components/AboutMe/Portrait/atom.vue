@@ -1,5 +1,5 @@
 <template>
-  <div id="motionPath">
+  <div id="motionPath" class="container--atom">
     <div class="motionPath">
       <svg width="291" height="328" version="1.1" id="atom" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px">
         <path id="atom--elipse__1" class="atom--elipse" d="M201,131.8c-8.5-5.6-17.5-11.2-26.9-16.5c-77.6-44-153-57.8-168.3-30.7s35.1,84.7,112.8,128.7s153,57.8,168.3,30.7c13.5-23.7-23.7-70.9-85.3-111.9"/>

@@ -1,5 +1,5 @@
 <template>
-    <ul class="container-menu">
+    <ul class="container-menu__desktop">
       <li class="menu--item text__mid-color">
         <h3>{{menuItem[0]}}</h3>
       </li>
