@@ -1,0 +1,25 @@
+.sample--body-sample{
+    border: 2px solid $mid-col;
+    height: 250px;
+    width: 44px;
+    border-radius: 0 0 30px 30px;
+    background-color: $bgc-col_pale;
+}
+
+.sample--plug-sample{
+    width: 40px;
+}
+
+.sample--plug-sample{
+    transform: translateY(15px) translateX(2px);
+}
+
+.text-sample-container--text-sample{
+    transform: rotate(-90deg);
+}
+
+.body-sample--empty-space-sample{
+    height: 20%;
+    width: 100%;
+    background-color: $bgc-col;
+}

@@ -2,6 +2,11 @@ button:focus{
     outline: 0;
 }
 
+button{
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
 .btn--fill{
     fill: $white-col;
     cursor: pointer;
@@ -18,27 +23,32 @@ button:focus{
     position: absolute;
 }
 
+.containr-btn__down-arrow{
+    position: absolute;
+    top: 80vh;
+    width: 65%;
+    display: flex;
+    justify-content: center;
+}
+
+.box-btn__down-arrow{
+    padding: 20px;
+}
+
 .btn__down-arrow{
     &:hover{
         cursor: pointer;
     }
 
-    height: 30px;
-    width: 30px;
-
-
-    .down-arrow--item{
-        width: 30px;
-        height: 2px;
-        background-color: $mid-col;
-        float: left;
-    }
-
-    .down-arrow--item__left{
-        transform: rotate(35deg);
-    }
-
-    .down-arrow--item__right{
-        transform: rotate(-35deg);
-    }
+    height: 26px;
+    width: 26px;
+    animation-name: animationArrow;
+    animation-iteration-count: infinite;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+@keyframes animationArrow{
+    from{transform: translateY(0px);}
+    to{transform: translateY(20px);}
 }

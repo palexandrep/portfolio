@@ -1,5 +1,7 @@
 import anime from 'animejs'
 
+
+
 export function followPath(el, pathx, pathy){
     var motionPath = anime({
         targets: el,
@@ -39,3 +41,17 @@ export function morphBtn(el,morph){
         duration: 400,
     });
 }
+
+export function slideAnimation(el, translation){
+    anime.remove(el);
+    var slide = anime({
+        targets: el,
+        translateX: translation,
+        duration: 2000,
+        elasticity: 250,
+        loop: false,
+        delay: 1000,
+        direction: 'alternate'
+    });
+}
+

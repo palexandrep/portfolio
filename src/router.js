@@ -11,5 +11,35 @@ export default new Router({
       name: 'home',
       component: Home
     },
+    {
+      path: '/about-me',
+      name: 'about me',
+      component: Home
+    },
+    {
+      path: '/my-skills',
+      name: 'my skills',
+      component: Home
+    },
+    {
+      path: '/my-experiences',
+      name: 'my experiences',
+      component: Home
+    },
+    {
+      path: '/my-diploma',
+      name: 'my diploma',
+      component: Home
+    },
+    {
+      path: '/my-work',
+      name: 'my work',
+      component: Home
+    },
+    {
+      path: '/contact',
+      name: 'contact',
+      component: Home
+    },
   ]
 })

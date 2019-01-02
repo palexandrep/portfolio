@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 60.5 49" style="enable-background:new 0 0 60.5 49;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;}
+	.st1{fill:#0B0F1D;}
+	.st2{fill:#D24116;}
+	.st3{fill:url(#LinkedIn_2_);}
+</style>
+<pattern  x="-283.6" y="-114.7" width="87.1" height="80.8" patternUnits="userSpaceOnUse" id="coul1" viewBox="0 -80.8 87.1 80.8" style="overflow:visible;">
+	<g id="XMLID_20_">
+		<polygon id="XMLID_22_" class="st0" points="0,-80.8 87.1,-80.8 87.1,0 0,0 		"/>
+		<polygon id="XMLID_21_" class="st1" points="87.1,0 0,0 0,-80.8 87.1,-80.8 		"/>
+	</g>
+</pattern>
+<path id="XMLID_468_" class="st2" d="M4.3,43.4L0,7c-0.4-3.7,2.5-7,6.2-7l48,0c3.7,0,6.7,3.3,6.2,7l-4.2,36.4
+	c-0.4,3.2-3,5.6-6.2,5.6H10.5C7.3,49,4.6,46.6,4.3,43.4z"/>
+<g id="XMLID_269_">
+	<pattern  id="LinkedIn_2_" xlink:href="#coul1" patternTransform="matrix(1 0 0 1 1239.9739 -1399.5249)">
+	</pattern>
+	<path id="LinkedIn_1_" class="st3" d="M48.1,28.4v13.2h-7.6V29.2c0-3.1-1.1-5.2-3.9-5.2c-2.1,0-3.4,1.4-3.9,2.8
+		c-0.2,0.5-0.3,1.2-0.3,1.9v12.8h-7.6c0,0,0.1-20.8,0-23h7.6v3.3c0,0,0,0.1-0.1,0.1h0.1v-0.1c1-1.6,2.8-3.8,6.9-3.8
+		C44.3,18,48.1,21.3,48.1,28.4z M16.8,7.5c-2.6,0-4.3,1.7-4.3,4c0,2.2,1.7,4,4.2,4h0.1c2.7,0,4.3-1.8,4.3-4
+		C21,9.2,19.4,7.5,16.8,7.5z M12.9,41.5h7.6v-23h-7.6V41.5z"/>
+</g>
+</svg>

@@ -1,8 +1,11 @@
 <template>
   <div class="container--about-me">
-    <SectionHeader/>
-    <Portrait/><PresentationText/>
-    <Button/>
+    <SectionHeader id="about-me" :sectionTitle="title"></SectionHeader>
+    <span class="grid-container container-section-content">
+      <Portrait/>
+      <PresentationText/>
+      <Button/>
+    </span>
   </div>
 </template>
 
@@ -11,7 +14,7 @@
 import SectionHeader from '@/components/SectionHeader/SectionHeader.vue'
 import Portrait from '@/components/AboutMe/Portrait/Portrait.vue'
 import PresentationText from '@/components/AboutMe/PresentationText.vue'
-import Button from '@/components/Button.vue'
+import Button from '@/components/Buttons/Button.vue'
 
 export default {
     name: 'AboutMe',
@@ -20,6 +23,11 @@ export default {
         Portrait,
         PresentationText,
         Button
+    },
+    data: function(){
+      return{
+        title: "ABOUT ME"
+      }
     }
 }
 

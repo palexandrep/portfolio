@@ -1,9 +1,11 @@
 <template>
     <div class="container--skills">
-        <SectionHeader/>
-        <MainSkills/>
-        <SubSkills/>
-        <Preferences/>
+        <SectionHeader id="my-skills" :sectionTitle="title"></SectionHeader>
+        <span class="grid-container container-section-content">
+            <MainSkills/>
+            <SubSkills/>
+            <Preferences/>
+        </span>
     </div>
 </template>
 
@@ -21,6 +23,11 @@ export default {
       MainSkills,
       SubSkills,
       Preferences
+  },
+  data: function(){
+      return{
+          title: "MY SKILLS"
+      }
   }
 }
 </script>

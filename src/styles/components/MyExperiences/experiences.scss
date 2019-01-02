@@ -1,0 +1,32 @@
+.box-item--experience{
+    background-color: $bgc-col_pale;
+    padding: $padding__small;
+}
+
+.item--img-experience{
+    width: 50px;
+}
+
+.experiences-separation{
+    width: 80%;
+}
+
+.experiences-separation__top{
+    border-left: 2px solid $white-col_pale;
+    border-bottom: 2px solid $white-col_pale;
+    height: 48px;
+}
+
+.experiences-separation__bottom{
+    border-right: 2px solid $white-col_pale;
+    height: 50px;
+}
+
+.container--item-img-experience{
+    display: flex;
+    justify-content: center;
+}
+
+.item--experiences:nth-child(even) .container--item-img-experience{
+    flex-direction: row-reverse;
+}

@@ -1,34 +1,67 @@
 <template>
-  <header class="container--header">
-    <div>
-      <p class="text text__mid-color">HELLO, i'M</p>
-      <h1 class="title title__white">ALEXANDRE PIETTE</h1>
-    </div>
-    <div>
-      <div class="header--container-skills-preview">
-        <h4 class="title title__mid-color">CSS</h4>
-        <p class="text text__mid-color">laboratory</p>
-      </div>
-      <div>
-        <h2 class="title title__mid-color">FRONT END</h2>
-        <P class="text text__mid-color">developer</P>
-      </div>
-    </div>
-    <button class="btn__down-arrow">
-      <img src="@/assets/img/down-arrow.svg" alt="down arrow">
-    </button>
-  </header>
+  <span class="grid-container">
+    <header class="container--header section-content grid-y center">
+      <span class="cell sub-container--header">
+        <div class="container--title__header">
+          <p class="text__header text text__mid-color">{{mainTitle.presentation}}</p>
+          <h1 class="title__header text title__white">{{mainTitle.title}}</h1>
+        </div>
+        <div class="container-header--content-and-subtitle grid-x">
+          <ContentTeaser/>
+          <SubTitle class="container-header--subtitle"/>
+        </div>
+        <div class="containr-btn__down-arrow  center">
+          <a href="#about-me" class="box-btn__down-arrow">
+            <img src="@/assets/img/down-arrow.svg" alt="down arrow" class="btn__down-arrow">
+          </a>
+        </div>
+      </span>
+    </header>
+  </span>
 </template>
 
 <script>
 
+import ContentTeaser from "@/components/Header/ContentTeaser.vue"
+import SubTitle from "@/components/Header/SubTitle.vue"
+
 export default {
   name: 'Header',
   components:{
+    ContentTeaser,
+    SubTitle
   },
   data: function(){
     return{
-      
+      mainTitle:{
+        presentation: "HELLO, I'M",
+        title: "ALEXANDRE PIETTE" 
+      },
+      contentTeaser:{
+        titles:{
+          title1:{
+            name: "CSS",
+            id: "teaser-title1"
+          },
+          title2:{
+            name: "JS",
+            id: "teaser-title2"
+          },
+          title3:{
+            name: "HTML",
+            id: "teaser-title3"
+          },
+          title4:{
+            name: "UX",
+            id: "teaser-title4"
+          },
+          title5:{
+            name: "UI",
+            id: "teaser-title5"
+          }
+        },
+        subTitle: "laboratory"
+      }
     }
   },
   methods:{

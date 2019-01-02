@@ -1,8 +1,90 @@
-.container--header{
-    height: 100vh;
-    width: 100%;
-}
 
 .header--container-skills-preview{
     background-color: $white-col_pale;
+    width: 100px;
+    height: 100px;
+
+}
+
+.header--container-skill-preview{
+    width: 100%;
+    height: 100%;
+    min-width: 100px;
+    text-align: center;
+    padding-top: 25px;
+}
+
+.glide{
+    width: 100px;
+    height: 100px;
+}
+
+.shrink{
+    min-width: 20px;
+}
+
+.title__content-teaser{
+    font-size: 22px;
+}
+
+.text__content-teaser{
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+//______________________________________________________
+
+
+.title__header{
+    font-size: 40px;
+    margin: 0;
+    font-weight: 100;
+    width: 100%;
+}
+.container--title__header{
+    width: 298px;
+    margin: auto;
+}
+
+.container--header{
+    height: 100vh;
+    width: 100%;
+    padding-top: 25vh;
+}
+
+.text__header--subtitle{
+    font-size: 24px;
+    padding-left: $padding__small;
+}
+
+.title__header--subtitle__1, .title__header--subtitle__2{
+    font-size: 48px;
+    line-height: 0.85;
+    letter-spacing: -2px;
+}
+
+.container-header--content-and-subtitle{
+    padding-top: $padding__big;
+    height: 100px;
+}
+
+.container-header--subtitle{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100px;
+}
+
+.sub-container-header--subtitle{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container-carousel{
+}
+
+.container-header--subtitle{
+    padding-left: $padding__small;
 }

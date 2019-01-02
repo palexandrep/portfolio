@@ -1,6 +1,9 @@
 <template>
   <div class="Container--contact">
-    <SectionHeader/>
+    <SectionHeader id="contact" :sectionTitle="title"></SectionHeader>
+    <span class="grid-container container-section-content">
+
+    </span>
   </div>
 </template>
 
@@ -15,7 +18,7 @@ export default {
   },
   data: function(){
     return{
-      
+      title: "CONTACT"
     }
   },
   methods:{

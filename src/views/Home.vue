@@ -5,7 +5,7 @@
     <Header class="bgd-blur"/>
     <AboutMe class="bgd-blur"/>
     <MySkills class="bgd-blur"/>
-    <MyExperience class="bgd-blur"/>
+    <MyExperiences class="bgd-blur"/>
     <MyDiploma class="bgd-blur"/>
     <MyWork class="bgd-blur"/>
     <Contact class="bgd-blur"/>
@@ -19,7 +19,7 @@ import Nav from '@/components/Nav/Nav.vue'
 import Header from '@/components/Header/Header.vue'
 import AboutMe from '@/components/AboutMe/AboutMe.vue'
 import MySkills from '@/components/MySkills/MySkills.vue'
-import MyExperience from '@/components/MyExperience/MyExperience.vue'
+import MyExperiences from '@/components/MyExperiences/MyExperiences.vue'
 import MyDiploma from '@/components/MyDiploma/MyDiploma.vue'
 import MyWork from '@/components/MyWork/MyWork.vue'
 import Contact from '@/components/Contact/Contact.vue'
@@ -34,7 +34,7 @@ export default {
     Header,
     AboutMe,
     MySkills,
-    MyExperience,
+    MyExperiences,
     MyDiploma,
     MyWork,
     Contact
