@@ -20,7 +20,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: solid 3px $bgc-col;
+    border: solid $stroke-width+1 $bgc-col;
     border-radius: 100%;
     min-width:40px;
     min-height: 40px;
@@ -29,5 +29,5 @@
 .decoration-locker{
     height: 100%;
     background-color: $bgc-col;
-    width: 3px;
+    width: $stroke-width+1;
 }

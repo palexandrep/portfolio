@@ -4,7 +4,7 @@
     <span class="grid-container container-section-content">
       <Portrait/>
       <PresentationText/>
-      <Button/>
+      <Button :btnTitle="btnText"/>
     </span>
   </div>
 </template>
@@ -26,7 +26,8 @@ export default {
     },
     data: function(){
       return{
-        title: "ABOUT ME"
+        title: "ABOUT ME",
+        btnText: "DOWNLOAD MY CV"
       }
     }
 }

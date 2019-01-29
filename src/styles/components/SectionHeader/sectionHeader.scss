@@ -4,6 +4,10 @@
     background-color: $mid-col;
 }
 
-.section-title{
+.box-section-title{
     color: $white-col_pale;
+    display: flex;
+    align-items: center;
+    //padding-left: 200px;
 }
+

@@ -35,7 +35,17 @@
 
 @import "components/MyWork/Components/samples.scss";
 
+//---------------------footer
+
+@import "components/Contact/footer.scss";
+
+// xy grid
+
+//@import "~";
+
 // global settings
+
+
 
 .center{
     margin-left: auto;
@@ -88,3 +98,5 @@ p{
     margin-top: 80px ;
     margin-bottom: 100px ;
 }
+
+

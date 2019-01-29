@@ -11,13 +11,13 @@
 <script>
 
 import anime from 'animejs'
-import javaScript from '@/assets/js/javaScript.js'
+import {toggleMenu} from '@/assets/js/javaScript.js'
 
 export default {
   name: 'Burger',
     
   mounted: function(){
-    this.toggleMenu = javaScript.toggleMenu
+    this.toggleMenu = toggleMenu
   }
 }
 </script>

@@ -1,5 +1,5 @@
 .sample--body-sample{
-    border: 2px solid $mid-col;
+    border: 1px solid $mid-col;
     height: 250px;
     width: 44px;
     border-radius: 0 0 30px 30px;
@@ -14,8 +14,47 @@
     transform: translateY(15px) translateX(2px);
 }
 
+
+
+#sample1 .text-sample-container--text-sample { 
+    animation-delay: 2s;
+}
+
+#sample3 .text-sample-container--text-sample { 
+    animation-delay: 4s;
+}
+
+
+
 .text-sample-container--text-sample{
-    transform: rotate(-90deg);
+    padding-bottom: 7px;
+
+    animation-name: floatText;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-direction: forwards;
+    animation-timing-function: linear;
+}
+
+@keyframes floatText{
+    0%{
+        transform: rotate(-90deg) translateX(0px) translateY(0px);
+    }
+    20%{
+        transform: rotate(-88deg)  translateX(-5px) translateY(1px);
+    }
+    45%{
+        transform: rotate(-91deg)  translateX(3px) translateY(-1px);
+    }
+    70%{
+        transform: rotate(-89deg)  translateX(-10px) translateY(4px);
+    }
+    85%{
+        transform: rotate(-92deg)  translateX(-5px) translateY(-1px);
+    }
+    100%{
+        transform: rotate(-90deg)  translateX(0px) translateY(0px);
+    }
 }
 
 .body-sample--empty-space-sample{
@@ -23,3 +62,4 @@
     width: 100%;
     background-color: $bgc-col;
 }
+

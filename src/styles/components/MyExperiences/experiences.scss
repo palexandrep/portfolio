@@ -1,14 +1,19 @@
 .box-item--experience{
     background-color: $bgc-col_pale;
-    padding: $padding__small;
+    padding: 30px;
 }
 
 .item--img-experience{
     width: 50px;
 }
 
+.container-experiences-separation, .box-item--experience{
+    margin-bottom: 15px;
+}
+
 .experiences-separation{
-    width: 80%;
+    width: 66%;
+    margin-left: 17%;
 }
 
 .experiences-separation__top{
@@ -17,16 +22,33 @@
     height: 48px;
 }
 
+.item--experiences:nth-child(even) .experiences-separation__top{
+    border-right: 2px solid $white-col_pale;
+    border-left: none;
+}
+
 .experiences-separation__bottom{
     border-right: 2px solid $white-col_pale;
     height: 50px;
 }
 
-.container--item-img-experience{
-    display: flex;
-    justify-content: center;
+.item--experiences:nth-child(even) .experiences-separation__bottom{
+    border-left: 2px solid $white-col_pale;
+    border-right: none;
 }
+
 
 .item--experiences:nth-child(even) .container--item-img-experience{
     flex-direction: row-reverse;
+}
+
+.container--img-experience{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item--experiences:last-child .container-experiences-separation .experiences-separation{
+    background-color: red;
+    width: 33%;
 }

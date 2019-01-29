@@ -3,7 +3,12 @@
         <span class="container--sub-title">
             <h4 class="title sub-title title__white">{{title}}</h4>
         </span>
-        <DNA/>
+        <ul class="container-list-main-skills">
+            <li class="item-main-skills text-main-skills" v-bind:key="skill" v-for="skill in skills">
+                <h4 class="title title__white">{{skill}}</h4>
+            </li>
+            <DNA class="item-main-skills text-main-skills"/>
+        </ul>
     </div>
 </template>
 
@@ -19,9 +24,11 @@ export default {
   },
     data: function(){
         return{
-            title: 'MAIN SKILLS'
+            title: 'MAIN SKILLS',
+            skills: [
+                'CSS','UX','HTML','JS','UI',
+            ]
         }
     }
-
 }
 </script>

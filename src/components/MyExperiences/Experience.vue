@@ -1,15 +1,17 @@
 <template>
-  <ul class="Container--experiences">
+  <ul class="container--experiences">
     <li class="item--experiences" v-for="domain in domains" v-bind:key="domain.id">
-      <div class="container--item-img-experience">
-        <div class="container--img-experience">
+      <div class="container--item-img-experience grid-x">
+        <div class="container--img-experience cell small-4">
           <img class="item--img-experience" :src="domain.img" :alt="domain.id">
         </div>
-        <span class="grid-y">
-          <div class="box-item--experience cell" v-bind:key="exp.id" v-for="exp in domain.experiences">
-            <h5 class="title text title__exp text_small">{{exp.textFat}}</h5>
-            <p class="text title__exp text__small text__mid-color">{{exp.textSmall}}</p>
-          </div>
+        <span class="cell small-8">
+          <span class="grid-x">
+            <div class="box-item--experience cell" v-bind:key="exp.id" v-for="exp in domain.experiences">
+              <h5 class="title text title__exp text_small">{{exp.textFat}}</h5>
+              <p class="text title__exp text__small text__mid-color">{{exp.textSmall}}</p>
+            </div>
+          </span>
         </span>
       </div>
       <span class="container-experiences-separation">
@@ -24,8 +26,6 @@
 </template>
 
 <script>
-
-
 
 export default {
   name: 'Experience',
@@ -56,7 +56,7 @@ export default {
             },
             exp2:{
               id: "design-exp2",
-              textFat: "UI ans UX",
+              textFat: "UI and UX",
               textSmall: "for 'La Rondinella' website"
             },
             exp3:{
@@ -116,6 +116,12 @@ export default {
         }
       }
     }
+  },
+  mounted: function(){
+
+   //const lol = (item) => console.log(item)
+   //lol(this.domains)
+
   },
   methods:{
   }

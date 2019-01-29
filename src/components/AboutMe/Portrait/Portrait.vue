@@ -18,7 +18,7 @@ export default {
   },
   methods:{
     animateGrow: function(){
-      growItem('.portrait-img', 900, 2.5, 100)
+      growItem('.portrait-img', 900, 2.2, 100)
     },
     animateShrink: function(){
       growItem('.portrait-img', 700, 1, 500)

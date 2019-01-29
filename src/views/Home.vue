@@ -48,7 +48,7 @@ export default {
     }),
   },
   methods:{
-    CloseMenu: function(){
+    CloseMenu: function(){ 
       const burger = document.querySelector('.btn-burger');
         slideMenu('.container-menu__mobile', 500, 100,100)
         burger.classList.remove('btn-burger__actif');

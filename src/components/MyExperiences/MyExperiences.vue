@@ -23,8 +23,6 @@ export default {
     return{
       title: "MY EXPERIENCES"
     }
-  },
-  methods:{
   }
 }
 </script>

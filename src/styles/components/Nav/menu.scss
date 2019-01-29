@@ -18,14 +18,18 @@
         position: relative;
         left: -30%;
         top: 15vh;
+        margin-right: 50px;
         padding: 10px 0;
     }
     
     .square{
-        width: 20px;
-        height: 20px;
-        background-color: $bgc-col;
+        width: 28px;
+        height: 28px;
+        background-color: $mid-col;
         float: left;
+        margin-right: 30px;
+        transform: translateX(58px);
+        //opacity: 0.3;
     }
     
     .home{
@@ -37,9 +41,9 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 30%;
     height: 100vh;
-    z-index: 30;
+    z-index: 31;
 }
 
 .bgd-blur__active{

@@ -15,27 +15,36 @@ button{
     }
 }
 
-.container-btn{
-    position: relative;
+//------------------ arrow
+
+.btn__blue{
+  fill: $bgc-col;
 }
 
-.btn-text{
-    position: absolute;
+.btn--arrow__to-the-top{
+  transform: rotate(180deg);
 }
 
-.containr-btn__down-arrow{
+.btn__mid-col{
+  fill: $mid-col;
+}
+
+.containr-btn--arrow-btn__down-arrow{
     position: absolute;
     top: 80vh;
     width: 65%;
+}
+
+.containr-btn--arrow-btn{
     display: flex;
     justify-content: center;
 }
 
-.box-btn__down-arrow{
+.box-btn__arrow{
     padding: 20px;
 }
 
-.btn__down-arrow{
+.btn__arrow{
     &:hover{
         cursor: pointer;
     }
@@ -51,4 +60,127 @@ button{
 @keyframes animationArrow{
     from{transform: translateY(0px);}
     to{transform: translateY(20px);}
+}
+
+//---------------------- call-to-A btn
+
+
+.btn{
+  background: $white-col;
+  border: none;
+  margin: 0;
+  padding: 5px 30px;
+  outline: inherit;
+  color: saturate($mid-col, 5%);
+  position: relative;
+  z-index: 2;
+  transform: origin(center);
+  width: 200px;
+  text-align: center;
+  margin: 60px 0px;
+}
+
+.container--btn__call-to{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn:active{
+  background-color: $white-col_pale;
+  color: darken($mid-col, 10%);
+}
+
+//--- call to decoration
+
+.bubble-container{
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.bubble{
+  position: absolute;
+  border: solid 3px $white-col_pale;
+  border-radius: 100%;
+  padding: 1px;
+  opacity: 0.2;
+  animation-name: bubbleOpacity;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  background-color: $white-col_pale;
+}
+
+.sub-bubble{
+  animation-delay: -1s;
+  animation-duration: 3s;
+  transform: translateX(-30px) translateY(20px);
+}
+
+@mixin bubbleModifier($axeX, $axeY, $size, $delay, $duration){
+  transform: translateX($axeX) translateY($axeY);
+  width: $size;
+  height: $size;
+  animation-delay: $delay;
+  animation-duration: $duration;
+}
+
+.bubble-container--top>.bubble:nth-child(1){
+  transform: translateX(-90px);
+  animation-delay: -2s;
+  animation-duration: 5s;
+}
+
+.bubble-container--top{
+  .bubble:nth-child(1){
+    @include bubbleModifier(-70px, 30px, 5px, -1.2s, 3.3s);
+  }
+  .bubble:nth-child(2){
+    @include bubbleModifier(-45px, 60px, 5px, -1s, 3.5s);
+  }
+  .bubble:nth-child(3){
+    @include bubbleModifier(-10px, 45px, 10px, 0s, 3.7s);
+  }
+  .bubble:nth-child(4){
+    @include bubbleModifier(50px, 50px, 5px, -0.3s, 5.5s);
+  }
+  .bubble:nth-child(5){
+    @include bubbleModifier(110px, 78px, 6px, -0.7s, 4.3s);
+  }
+  .bubble:nth-child(6){
+    @include bubbleModifier(-130px, 67px, 12px, -0.7s, 4.3s);
+  }
+}
+
+.bubble-container--bottom{
+  .bubble:nth-child(1){
+    @include bubbleModifier(-75px, -58px, 8px, -0.2s, 4.6s);
+  }
+  .bubble:nth-child(2){
+    @include bubbleModifier(-50px, -55px, 12px, -1.2s, 4.2s);
+  }
+  .bubble:nth-child(3){
+    @include bubbleModifier(-20px, -45px, 6px, -2s, 7.5s);
+  }
+  .bubble:nth-child(4){
+    @include bubbleModifier(25px, -52px, 3px, -0.8s, 5.7s);
+  }
+  .bubble:nth-child(5){
+    @include bubbleModifier(90px, -60px, 15px, -3s, 6.1s);
+  }
+}
+
+@keyframes bubbleOpacity{
+  0%{
+    $i:random(9);
+    opacity: 0.1;
+  }
+  50%{
+    $i:random(9);
+    opacity: 0;
+  }
+  100%{
+    $i:random(9);
+    opacity: 0.1;
+  }
 }

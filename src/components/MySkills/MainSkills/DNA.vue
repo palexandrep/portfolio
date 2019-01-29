@@ -1,14 +1,9 @@
 <template>
   <div class="container--dna">
-    <div class="box box--top"></div>
-    <!--<div class="container-message">
-        <p>Sequencing data</p>
-    </div>-->
     <div class="container-propeller">
         <div class="sub-container-propeller sub-container-propeller--left"></div>
         <div class="sub-container-propeller sub-container-propeller--right"></div>
     </div>
-    <div class="box box--bottom"></div>
   </div>
 </template>
 
@@ -20,12 +15,13 @@ export default {
   name: 'DNA',
   data: function(){
     return{
-      dnaLenght: 10
+      dnaLenght: 12
     }
   },
   methods:{
 
   },
+  
   mounted: function(){
     const self = this;
     function createChild(){

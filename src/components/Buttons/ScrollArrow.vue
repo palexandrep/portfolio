@@ -1,0 +1,33 @@
+<template>
+    <div class="containr-btn--arrow-btn center" :class="btnDirection">
+        <a v-bind:href="scrollLocation" class="box-btn__arrow" v-smooth-scroll="{ duration: 500, offset: 0, container: '' }">
+            <svg version="1.1" class="btn__arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	            viewBox="0 0 33.3 20.5" style="enable-background:new 0 0 33.3 20.5;" xml:space="preserve">
+
+			    <path id="XMLID_17_" :class="arrowColor" d="M30.3,1.5c-4.9,5.1-9.8,10.3-14.7,15.4c0.7,0,1.4,0,2.1,0C12.8,11.8,7.9,6.6,3,1.5
+				C1.7,0.1-0.4,2.2,0.9,3.6C5.8,8.8,10.7,13.9,15.6,19c0.5,0.6,1.6,0.6,2.1,0c4.9-5.1,9.8-10.3,14.7-15.4
+				C33.7,2.2,31.6,0.1,30.3,1.5L30.3,1.5z"/>
+            </svg>
+        </a>
+    </div>
+</template>
+
+<script>
+export default {
+    name: "ScrollArrow",
+    props:{
+        scrollLocation:{
+            type: String,
+            required: true
+        },
+        arrowColor:{
+            type: String,
+            requred: true
+        },
+        btnDirection:{
+            type: String,
+            required: false
+        }
+    }
+}
+</script>

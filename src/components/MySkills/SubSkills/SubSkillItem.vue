@@ -1,8 +1,11 @@
 <template>
-    <ul>
-        <li v-for="item in items" v-bind:item="item" v-bind:key="item.id" class="container--sub-skill-item">
+    <ul class="gallery grid-x">
+        <li v-for="item in items" v-bind:item="item" v-bind:key="item.id" class="container--sub-skill-item gallery-item">
             <h5 class="title title__white title__sub-skill">{{item.subSkill.title}}</h5>
-            <div class="sub-skill-item-type">{{item.subSkill.type}}</div>
+            <p class="sub-skill-item-type text__mid-color">{{item.subSkill.type}}</p>
+        </li>
+        <li>
+            
         </li>
     </ul>
 </template>
@@ -13,6 +16,8 @@ export default {
   name: 'SubSkillItem',
   data: function(){
         return{
+            totalItems: 20,
+            nbItems: '',
             items: [
                 {subSkill:{
                     title: 'SCSS',
@@ -81,6 +86,16 @@ export default {
                 },
             ]
         }
+    },
+    mounted: function(){
+       /* this.nbItems = this.items.length
+        this.emptyItems = this.totalItems-this.nbItems
+        const listItemsFull = document.querySelectorAll('.container--sub-skill-item')
+        const createItem = (itemToCreate,options) => document.createElement(itemToCrete,[options])
+        
+        //const itemEmpty = document.createElement(li[])
+        console.log(listItemsFull[3])*/
     }
+
 }
 </script>

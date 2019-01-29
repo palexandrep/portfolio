@@ -5,6 +5,60 @@ Vue.use(Vuex)
 
 //-------------------------- State
 
+//------- Content Teaser
+
+const contentTeaser = {
+  titles:{
+    title1:{
+      name: "CSS",
+      id: "teaser-title1"
+    },
+    title2:{
+      name: "JS",
+      id: "teaser-title2"
+    },
+    title3:{
+      name: "HTML",
+      id: "teaser-title3"
+    },
+    title4:{
+      name: "UX",
+      id: "teaser-title4"
+    },
+    title5:{
+      name: "UI",
+      id: "teaser-title5"
+    }
+  },
+  subTitle: "Laboratory"
+}
+
+//-------My Work links
+
+const samples = {
+    github:{
+      id: 'sample1',
+      name: 'github',
+      link: 'https://github.com/palexandrep',
+      iconUrl: require('@/assets/img/links/github.svg'),
+      picture: require('@/assets/img/links/github.svg')
+    },
+    behance:{
+      id: 'sample2',
+      name: 'behance',
+      link: 'https://www.behance.net/ALEXANDREPIETTE',
+      iconUrl: require('@/assets/img/links/behance.svg'),
+      picture: require('@/assets/img/links/behance.svg')
+    },
+    codepen:{
+      id: 'sample3',
+      name: 'codepen',
+      link: 'https://codepen.io/Smog/',
+      iconUrl: require('@/assets/img/links/codepen.svg'),
+      picture: require('@/assets/img/links/codepen.svg')
+    }
+}
+
 //--- sections
 
 const sections = {
@@ -58,6 +112,12 @@ const menu = {
   menuActif: false
 }
 
+//----btn-decoration
+
+const nbDecorationBtn = {
+  nbDot: 6
+}
+
 //-------------------- Getters
 
 let getters = {
@@ -77,7 +137,10 @@ const mutations = {
 export default new Vuex.Store({
   state: {
     sections,
-    menu
+    menu,
+    nbDecorationBtn,
+    samples,
+    contentTeaser
   },
   mutations: mutations,
   getters: getters,

@@ -1,7 +1,9 @@
 <template>
   <div class="container-section-title grid-x">
     <Locker class="cell small-2"/>
-    <h3 class="section-title title cell small-10">{{sectionTitle}}</h3>
+    <span class="box-section-title cell small-10">
+      <h3 class="title section-title">{{sectionTitle}}</h3>
+    </span>
   </div>
 </template>
 
@@ -15,11 +17,6 @@ export default {
   name: 'SectionHeader',
   components:{
     Locker
-  },
-  data: function(){
-    return{
-      
-    }
   },
   props:{
     sectionTitle:{

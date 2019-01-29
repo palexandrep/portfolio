@@ -7,7 +7,7 @@
     <ul class="container-menu container-menu__mobile">
       <li class="menu--item" v-for="section in sections" v-bind:key="section.id">
         <span class="square"></span>
-        <a class="text__mid-color" v-on:click="toggleMenu()" :href="section.anchor"><h3>{{section.name}}</h3></a>
+        <a class="text__mid-color" v-smooth-scroll="{ duration: 500, offset: 0, container: '' }" v-on:click="toggleMenu()" :href="section.anchor"><h3>{{section.name}}</h3></a>
       </li>
     </ul>
   </nav>
@@ -16,7 +16,7 @@
 <script>
 
 import anime from 'animejs'
-import javaScript from '@/assets/js/javaScript.js'
+import {toggleMenu} from '@/assets/js/javaScript.js'
 import Burger from '@/components/Nav/Burger.vue'
 import { mapGetters } from 'vuex'
 
@@ -40,7 +40,7 @@ export default {
     }
   },
   mounted: function(){
-    this.toggleMenu = javaScript.toggleMenu
+    this.toggleMenu = toggleMenu
   }
 }
 </script>
