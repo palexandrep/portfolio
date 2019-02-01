@@ -35,7 +35,7 @@ export default {
 
         moveBubbles: function (){
             const self = this
-            console.log('ok')
+            //console.log('ok')
             let bubbles = document.querySelectorAll('.bubble')
             for(const i in bubbles){
                 const randomize = (max) => Math.floor(Math.random() * Math.floor(max));
@@ -53,7 +53,7 @@ export default {
     mounted: function(){
         const self = this
         const hello = function(){
-            console.log(self.triggerAnimation)
+            //console.log(self.triggerAnimation)
         return self.triggerAnimation != self.triggerAnimation
         
         }()

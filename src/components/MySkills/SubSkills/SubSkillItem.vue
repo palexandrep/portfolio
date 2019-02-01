@@ -1,13 +1,12 @@
 <template>
-    <ul class="gallery grid-x">
-        <li v-for="item in items" v-bind:item="item" v-bind:key="item.id" class="container--sub-skill-item gallery-item">
-            <h5 class="title title__white title__sub-skill">{{item.subSkill.title}}</h5>
-            <p class="sub-skill-item-type text__mid-color">{{item.subSkill.type}}</p>
-        </li>
-        <li>
-            
-        </li>
-    </ul>
+    <span class="center">
+        <ul class="container--sub-skill-list grid-x grid-margin-x grid-margin-y">
+            <li v-for="item in items" v-bind:item="item" v-bind:key="item.id" class="container--sub-skill-item cell small-2">
+                <h5 class="title title__white title__sub-skill">{{item.subSkill.title}}</h5>
+                <p class="sub-skill-item-type text__mid-color text__tiny">{{item.subSkill.type}}</p>
+            </li>
+        </ul>
+    </span>
 </template>
 
 <script>

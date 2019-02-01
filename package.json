@@ -28,7 +28,8 @@
     "url-loader": "^1.1.2",
     "vue-cli-plugin-style-resources-loader": "^0.1.3",
     "vue-svg-loader": "^0.11.0",
-    "vue-template-compiler": "^2.5.17"
+    "vue-template-compiler": "^2.5.17",
+    "webpack-cli": "^3.2.1"
   },
   "postcss": {
     "plugins": {

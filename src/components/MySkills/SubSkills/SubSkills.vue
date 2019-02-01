@@ -3,7 +3,7 @@
         <span class="container--sub-title">
             <h4 class="title sub-title title__white">{{title}}</h4>
         </span>
-        <SubSkillItem/>
+        <SubSkillItem class="container--sub-section" />
     </div>
 </template>
 

@@ -1,9 +1,9 @@
 <template>
   <ul class="container--experiences">
-    <li class="item--experiences" v-for="domain in domains" v-bind:key="domain.id">
-      <div class="container--item-img-experience grid-x">
+    <li class="group--experiences" v-for="domain in domains" v-bind:key="domain.id">
+      <div class="container--group-img-experience grid-x">
         <div class="container--img-experience cell small-4">
-          <img class="item--img-experience" :src="domain.img" :alt="domain.id">
+          <img class="group--img-experience" :src="domain.img" :alt="domain.id">
         </div>
         <span class="cell small-8">
           <span class="grid-x">
@@ -20,7 +20,7 @@
       </span>
     </li>
     <li class="container--img-experience grid-x">
-      <img class="item--img-experience cell center" :src='chemicalReaction' alt="chemicals reaction">
+      <img class="group--img-experience cell center" :src='chemicalReaction' alt="chemicals reaction">
     </li>
   </ul>
 </template>

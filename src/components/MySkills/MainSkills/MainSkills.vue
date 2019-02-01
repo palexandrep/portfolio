@@ -3,31 +3,29 @@
         <span class="container--sub-title">
             <h4 class="title sub-title title__white">{{title}}</h4>
         </span>
-        <ul class="container-list-main-skills">
-            <li class="item-main-skills text-main-skills" v-bind:key="skill" v-for="skill in skills">
-                <h4 class="title title__white">{{skill}}</h4>
-            </li>
+        <div class="container--sub-section">
+            <MainSkill/>
             <DNA class="item-main-skills text-main-skills"/>
-        </ul>
+            <MainSkill :bottom={check} />
+        </div>
     </div>
 </template>
 
 <script>
 
-import anime from 'animejs'
 import DNA from '@/components/MySkills/MainSkills/DNA.vue'
+import MainSkill from '@/components/MySkills/MainSkills/MainSkill.vue'
 
 export default {
   name: 'MainSkills',
   components:{
-      DNA
+      DNA,
+      MainSkill
   },
     data: function(){
         return{
             title: 'MAIN SKILLS',
-            skills: [
-                'CSS','UX','HTML','JS','UI',
-            ]
+            check:true
         }
     }
 }

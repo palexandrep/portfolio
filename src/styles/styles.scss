@@ -24,7 +24,10 @@
 //---------------my skills
 
 @import "components/MySkills/MainSkills/dna.scss";
+@import "components/MySkills/MainSkills/mainSkills.scss";
+
 @import "components/MySkills/SubSkills/subskillitem.scss";
+
 @import "components/MySkills/Preferences/preferences.scss";
 
 //---------------my experiences
@@ -97,6 +100,11 @@ p{
 .container-section-content{
     margin-top: 80px ;
     margin-bottom: 100px ;
+}
+
+.container--sub-section{
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 
