@@ -7,10 +7,12 @@
             <p class="text__header text text__mid-color">{{mainTitle.presentation}}</p>
             <h1 class="title__header text title__white">{{mainTitle.title}}</h1>
           </div>
-          <div class="container-header--content-and-subtitle grid-x">
-            <ContentTeaser/>
-            <SubTitle class="container-header--subtitle"/>
-          </div>
+          <span class="container-header--content-and-subtitle">
+            <div class="sub-container-header--content-and-subtitle grid-x">
+              <ContentTeaser class="cell"/>
+              <SubTitle class="container-header--subtitle"/>
+            </div>
+          </span>
         </span>
         
         <ScrollArrow :scrollLocation="scrollLinkTarget" :arrowColor="scrollBottomColor"/>

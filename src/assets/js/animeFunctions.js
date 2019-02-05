@@ -33,6 +33,51 @@ export function slideMenu(el,time,translate,elasticity){
     });
 }
 
+export function animateSquareMenu(el,activeSection){
+    //anime.remove(el);
+    const rolling = anime({
+        targets: el,
+        translateX:{
+            value: function(el, i, l) {
+                switch(i){
+                    case 0:
+                    return -110+10;
+                    case 1:
+                    return -110+10;
+                    case 2:
+                    return -110+70;
+                    case 3:
+                    return -110+31;
+                    case 4:
+                    return -110+3;
+                    case 5:
+                    return -110+2;
+                }
+              },
+            duration: 300,
+        },
+       /* opacity:{
+            value: 1,
+            duration: 300,
+        },*/
+          rotate: {
+            value: 360,
+            duration: 300,
+            easing: 'easeInOutSine'
+          },
+          delay: function(el, i, l) {
+            return i * 85;
+          },
+          direction: 'alternate'
+    });
+    const activeSquare = anime({
+        targets: activeSection,
+        delay: 2000,
+        translateX: -20,
+        duration: 500
+    })
+}
+
 export function animateBtn(el,scale,duration){
     anime.remove(el);
     const scaling = anime({

@@ -18,7 +18,7 @@
         position: relative;
         left: -30%;
         top: 15vh;
-        margin-right: 50px;
+        margin-right: 15px;
         padding: 10px 0;
     }
     
@@ -28,8 +28,28 @@
         background-color: $mid-col;
         float: left;
         margin-right: 30px;
-        transform: translateX(58px);
+        //opacity: 0;
+        // transform: translateX(58px);
         //opacity: 0.3;
+    }
+
+    .squareActiveSection{
+        animation-name: activesquare;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        animation-duration: 2s;
+    }
+    @keyframes activesquare{
+        0%{
+            background-color: red;
+        }
+        50%{
+            background-color: red;
+        }
+        100%{
+            background-color: red;
+        }
     }
     
     .home{

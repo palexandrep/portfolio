@@ -63,3 +63,12 @@
     background-color: $bgc-col;
 }
 
+.container--samples li{
+    align-items: flex-end;
+}
+
+.image__item{
+    height: 220px;
+    width: 220px;
+}
+

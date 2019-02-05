@@ -1,10 +1,6 @@
 <template>
   <figure v-lazyload class="image__wrapper">
-    <img
-      class="image__item"
-      :src="source"
-      alt="random image"
-    >
+    <img class="image__item" :src="source" alt="random image">
   </figure>
 </template>
 
@@ -23,6 +19,5 @@ export default {
     directives: {
       lazyload: LazyLoadDirective
     }
-    
 }
 </script>

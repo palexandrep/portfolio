@@ -7,7 +7,9 @@
     <ul class="container-menu container-menu__mobile">
       <li class="menu--item" v-for="section in sections" v-bind:key="section.id">
         <span class="square"></span>
-        <a class="text__mid-color" v-smooth-scroll="{ duration: 500, offset: 0, container: '' }" v-on:click="toggleMenu()" :href="section.anchor"><h3>{{section.name}}</h3></a>
+        <a class="text__mid-color" v-smooth-scroll="{ duration: 500, offset: 0, container: '' }" v-on:click="toggleMenu()" :href="section.anchor">
+          <h3 :ref="`section${section.nb}`">{{section.name}}</h3>
+        </a>
       </li>
     </ul>
   </nav>
@@ -25,7 +27,11 @@ export default {
   components:{
     Burger
   },
-
+  data:function(){
+    return{
+      width: ''
+    }
+  },
   computed:{
 
     ...mapGetters({
@@ -41,6 +47,10 @@ export default {
   },
   mounted: function(){
     this.toggleMenu = toggleMenu
+
+  },
+  methods:{
+
   }
 }
 </script>

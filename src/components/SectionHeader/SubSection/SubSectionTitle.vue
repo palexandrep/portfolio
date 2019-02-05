@@ -5,21 +5,12 @@
 </template>
 
 <script>
-
-import {mapGetters} from 'vuex'
-
     export default {
         name: 'SubSectionTitle',
         props:{
             title:{
-                required: true,
-                type: 'string'
+                required: true
             }
-        },
-        computed:{
-            ...mapGetters({
-                myState: 'getMyState'
-            }),
         }
     }
 </script>

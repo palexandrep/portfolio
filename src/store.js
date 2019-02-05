@@ -38,23 +38,23 @@ const contentTeaser = {
 const samples = {
     github:{
       id: 'sample1',
-      name: 'github',
+      title: 'github',
       link: 'https://github.com/palexandrep',
-      iconUrl: require('@/assets/img/links/github.svg'),
+      iconUrl: require('@/assets/img/koma_pics/pic1.jpg'),
       picture: require('@/assets/img/links/github.svg')
     },
     behance:{
       id: 'sample2',
-      name: 'behance',
+      title: 'behance',
       link: 'https://www.behance.net/ALEXANDREPIETTE',
-      iconUrl: require('@/assets/img/links/behance.svg'),
+      iconUrl: require('@/assets/img/koma_pics/pic1.jpg'),
       picture: require('@/assets/img/links/behance.svg')
     },
     codepen:{
       id: 'sample3',
-      name: 'codepen',
+      title: 'codepen',
       link: 'https://codepen.io/Smog/',
-      iconUrl: require('@/assets/img/links/codepen.svg'),
+      iconUrl: require('@/assets/img/koma_pics/pic1.jpg'),
       picture: require('@/assets/img/links/codepen.svg')
     }
 }
@@ -63,6 +63,7 @@ const samples = {
 
 const sections = {
   about: {
+    nb:1,
     id: "about",
     name: 'ABOUT ME',
     anchor: "#about-me",
@@ -70,6 +71,7 @@ const sections = {
     closed: false
   },
   skills: {
+    nb:2,
     id: "skills",
     name: 'MY SKILLS',
     anchor: "#my-skills",
@@ -77,6 +79,7 @@ const sections = {
     closed: false
   },
   exp: {
+    nb:3,
     id: "exp",
     name: 'MY EXPERIENCES',
     anchor: "#my-experiences",
@@ -84,6 +87,7 @@ const sections = {
     closed: false
   },
   diploma: {
+    nb:4,
     id: "diploma",
     name: 'MY DIPLOMA',
     anchor: "#my-diploma",
@@ -91,6 +95,7 @@ const sections = {
     closed: false
   },
   work: {
+    nb:5,
     id: "work",
     name: 'MY WORK',
     anchor: "#my-work",
@@ -98,6 +103,7 @@ const sections = {
     closed: false
   },
   contact: {
+    nb:6,
     id: "contact",
     name: 'CONTACT',
     anchor: "#contact",
@@ -116,6 +122,27 @@ const menu = {
 
 const nbDecorationBtn = {
   nbDot: 6
+}
+
+//-----switch btns
+
+const switchBtnsVal = {
+  switchs:{
+    preferences:{
+      btn1: {
+        text: "INTEGRATION",
+        value: 1
+      },
+      btn2: {
+        text: "JAVASCRIPT",
+        value: 2
+      },
+      btn3: {
+        text: "DESIGN",
+        value: 3
+      }
+    }
+  }
 }
 
 //-------------------- Getters
@@ -140,7 +167,8 @@ export default new Vuex.Store({
     menu,
     nbDecorationBtn,
     samples,
-    contentTeaser
+    contentTeaser,
+    switchBtnsVal
   },
   mutations: mutations,
   getters: getters,

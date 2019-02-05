@@ -49,7 +49,7 @@
 .container--header{
     height: 100vh;
     width: 100%;
-    padding-top: 25vh;
+    padding-top: 20vh;
 }
 
 .text__header--subtitle{
@@ -64,8 +64,9 @@
 }
 
 .container-header--content-and-subtitle{
-    padding-top: $padding__big;
-    height: 100px;
+    padding-top: $padding__sub-section;
+    display: flex;
+    justify-content: center;
 }
 
 .container-header--subtitle{

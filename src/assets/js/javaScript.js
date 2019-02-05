@@ -1,4 +1,5 @@
 import {slideMenu} from '@/assets/js/animeFunctions.js'
+import {animateSquareMenu} from '@/assets/js/animeFunctions.js'
 
 export function toggleMenu(){
   const blurs = document.querySelectorAll('.bgd-blur')
@@ -11,13 +12,24 @@ export function toggleMenu(){
       blur.classList.add('bgd-blur__active')
     }
   }
-    else{
+  else{
       slideMenu('.container-menu__mobile', 1000, 100,400)
       burger.classList.remove('btn-burger__actif');
       this.$store.commit('MenuActif')
       for(let blur of blurs){
       blur.classList.remove('bgd-blur__active')
     }
+  }
+}
+
+
+//--- item menu active still need to be debugged
+export function rollingSquare(stateOfMenu){
+  if(stateOfMenu !== false){
+    animateSquareMenu('.square','.menu--item:nth(1) square')
+  }
+  else{
+    return
   }
 }
 

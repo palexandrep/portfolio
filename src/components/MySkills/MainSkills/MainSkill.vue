@@ -1,11 +1,11 @@
 <template>
         <ul class="container-list-main-skills grid-x" v-if="bottom !== true">
-            <li class="item-main-skills text-main-skills cell small-1" v-bind:key="skill" v-for="skill in skills">
+            <li class="item-main-skills text-main-skills cell small-4" v-bind:key="skill" v-for="skill in skills">
                 <h4 class="title title__white">{{skill}}</h4>
             </li>
         </ul>
         <ul class="container-list-main-skills grid-x" v-else>
-            <li class="item-main-skills text-main-skills cell small-2" v-bind:key="skill" v-for="skill in skillsFiltered">
+            <li class="item-main-skills text-main-skills cell small-6" v-bind:key="skill" v-for="skill in skillsFiltered">
                 <h4 class="title title__white">{{skill}}</h4>
             </li>
         </ul>

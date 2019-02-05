@@ -31,7 +31,7 @@ button{
 
 .containr-btn--arrow-btn__down-arrow{
     position: absolute;
-    top: 80vh;
+    padding-top: 10vh;
     width: 65%;
 }
 
@@ -183,4 +183,23 @@ button{
     $i:random(9);
     opacity: 0.1;
   }
+}
+
+//----------- switchs
+
+.btn__switch{
+  background-color: $mid-col;
+  color: $white-col;
+  width: 30px;
+  height: 30px;
+  padding: 20px;
+  margin: 0 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-btn__switch{
+  display: flex;
+  
 }
