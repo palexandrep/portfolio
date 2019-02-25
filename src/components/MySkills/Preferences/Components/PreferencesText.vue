@@ -21,15 +21,15 @@ export default {
         return{
             preferences:{
                 pref1:{
-                    name: "INTEGRATION",
+                    name: "integration",
                     id: "pref-integration" 
                 },
                 pref2:{
-                    name: "JAVASCRIPT",
+                    name: "javascript",
                     id: "pref-javascript"
                 },
                 pref3:{
-                    name: "DESIGN",
+                    name: "design",
                     id: "pref-design"
                 }
             }

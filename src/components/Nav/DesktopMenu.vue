@@ -1,7 +1,7 @@
 <template>
     <ul class="container-menu__desktop">
-      <li class="menu--item text__mid-color" v-bind:key="section.id" v-for="section in sections">
-        <h3>{{section.name}}</h3>
+      <li class="menu--item title__pale text__tiny" v-bind:key="section.id" v-for="section in sections">
+        <h3 class="menu--item-text__desktop">{{section.name}}</h3>
       </li>
     </ul>
 </template>
@@ -20,8 +20,6 @@ export default {
     sections(){
       return this.$store.state.sections
     }
-  },
-  methods:{
   }
 }
 </script>

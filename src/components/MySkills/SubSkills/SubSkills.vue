@@ -1,8 +1,6 @@
 <template>
     <div class="container--sub-skills">
-        <span class="container--sub-title">
-            <h4 class="title sub-title title__white">{{title}}</h4>
-        </span>
+        <SubSectionTitle :title='distributeTitle()' />
         <SubSkillItem class="container--sub-section" />
     </div>
 </template>
@@ -11,16 +9,23 @@
 
 import anime from 'animejs'
 import SubSkillItem from '@/components/MySkills/SubSkills/SubSkillItem.vue'
+import SubSectionTitle from "@/components/SectionHeader/SubSection/SubSectionTitle.vue"
 
 export default {
     name: 'SubSkills',
     data:function(){
         return{
-            title: 'SUB SKILLS'
+            titleSubSection: 'sub skills'
         }
     },
     components:{
-        SubSkillItem
+        SubSkillItem,
+        SubSectionTitle
+    },
+    methods:{
+        distributeTitle: function(){
+            return this.titleSubSection
+        }
     }
 }
 </script>

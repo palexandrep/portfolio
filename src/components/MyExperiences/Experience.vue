@@ -1,14 +1,14 @@
 <template>
   <ul class="container--experiences">
-    <li class="group--experiences" v-for="domain in domains" v-bind:key="domain.id">
+    <li class="group--experiences" v-for="domain in domains" v-bind:key="domain.id" >
       <div class="container--group-img-experience grid-x">
         <div class="container--img-experience cell small-4">
           <img class="group--img-experience" :src="domain.img" :alt="domain.id">
         </div>
         <span class="cell small-8">
           <span class="grid-x">
-            <div class="box-item--experience cell" v-bind:key="exp.id" v-for="exp in domain.experiences">
-              <h5 class="title text title__exp text_small">{{exp.textFat}}</h5>
+            <div class="box-item--experience post cell" v-bind:key="exp.id" v-for="exp in domain.experiences">
+              <h5 class="title text title__exp text_normal">{{exp.textFat}}</h5>
               <p class="text title__exp text__small text__mid-color">{{exp.textSmall}}</p>
             </div>
           </span>
@@ -62,7 +62,7 @@ export default {
             exp3:{
               id: "design-exp3",
               textFat: "Playzone",
-              textSmall: "participation in UI, UX and integration (2017 edition)"
+              textSmall: "participation in UI, UX and integration (2017 edition )"
             },
             exp4:{
               id: "design-exp4",
@@ -78,12 +78,12 @@ export default {
             exp1:{
               id: "teatch-exp1",
               textFat: "Art teatcher",
-              textSmall: "(IND shcool Fleurus)"
+              textSmall: "( IND shcool Fleurus )"
             },
             exp2:{
               id: "teatch-exp2",
               textFat: "Art teatcher",
-              textSmall: "( Kalleis shcool Waterloo)"
+              textSmall: "( Kalleis shcool Waterloo )"
             }
           }
         },

@@ -1,7 +1,7 @@
 <template>
-  <div class="Container--my-experiences">
-    <SectionHeader id="my-experiences" :sectionTitle="title"></SectionHeader>
-    <span class="grid-container container-section-content">
+  <div class="container--experiences">
+    <SectionHeader id="my-experiences" :lockerClassName="lockerClass" :sectionTitle="title"></SectionHeader>
+    <span class="grid-container container--experiences--content container-section-content">
       <Experience/>
     </span>
   </div>
@@ -21,7 +21,8 @@ export default {
   },
   data: function(){
     return{
-      title: "MY EXPERIENCES"
+      title: "my experiences",
+      lockerClass: "locker-experiences"
     }
   }
 }

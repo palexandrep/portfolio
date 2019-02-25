@@ -1,11 +1,13 @@
 <template>
     <span class="center">
         <ul class="container--sub-skill-list grid-x grid-margin-x grid-margin-y">
-            <li v-for="item in items" v-bind:item="item" v-bind:key="item.id" class="container--sub-skill-item cell small-4">
+            <li v-for="item in items" v-bind:item="item" v-bind:key="item.id" class="container--sub-skill-item container--sub-skill-item__full cell small-4">
                 <h5 class="title title__white title__sub-skill">{{item.subSkill.title}}</h5>
                 <p class="sub-skill-item-type text__mid-color text__tiny">{{item.subSkill.type}}</p>
             </li>
+            <span v-for="i in ghostItems" v-bind:key="i" class="container--sub-skill-item container--sub-skill-item__empty cell small-4"></span>
         </ul>
+        <button @click.prevent='ok()' >push</button>
     </span>
 </template>
 
@@ -15,71 +17,70 @@ export default {
   name: 'SubSkillItem',
   data: function(){
         return{
-            totalItems: 20,
-            nbItems: '',
+            ghostItems: 5,
             items: [
                 {subSkill:{
-                    title: 'SCSS',
+                    title: 'scss',
                     type: '1'
                     }
                 },
                 {subSkill:{
-                    title: 'BEM',
+                    title: 'bem',
                     type: '1'
                     }
                 },
                 {subSkill:{
-                    title: 'VUE JS',
+                    title: 'vue js',
                     type: '2'
                     }
                 },
                 {subSkill:{
-                    title: 'REACT',
+                    title: 'react',
                     type: '2'
                     }
                 },
                 {subSkill:{
-                    title: 'AJAX',
+                    title: 'ajax',
                     type: '2'
                     }
                 },
                 {subSkill:{
-                    title: 'JQUERY',
+                    title: 'jquery',
                     type: '2'
                     }
                 },
                 {subSkill:{
-                    title: 'ATOMIC DESIGN',
+                    title: 'atomic design',
                     type: '3'
                     }
                 },
                 {subSkill:{
-                    title: 'WIREFRAME',
+                    title: 'wireframe',
                     type: '3'
                     }
                 },
                 {subSkill:{
-                    title: 'WORDPRESS',
+                    title: 'wordpress',
                     type: '5'
                     }
                 },
                 {subSkill:{
-                    title: 'PERSONAS',
+                    title: 'personas',
                     type: '3'
                     }
                 },
                 {subSkill:{
-                    title: 'WEBPACK',
+                    title: 'webpack',
                     type: '4'
                     }
                 },
                 {subSkill:{
-                    title: 'GIT',
+                    title: 'git',
                     type: '4'
                     }
                 },
                 {subSkill:{
-                    title: 'PHP',
+                    title: 'php',
                     type: '5'
                     }
                 },
@@ -87,13 +88,34 @@ export default {
         }
     },
     mounted: function(){
-       /* this.nbItems = this.items.length
-        this.emptyItems = this.totalItems-this.nbItems
-        const listItemsFull = document.querySelectorAll('.container--sub-skill-item')
-        const createItem = (itemToCreate,options) => document.createElement(itemToCrete,[options])
-        
-        //const itemEmpty = document.createElement(li[])
-        console.log(listItemsFull[3])*/
+      /* const subSkillsList = document.querySelectorAll('.container--sub-skill-item')
+       const subSkillsListEmpty = document.querySelectorAll('.container--sub-skill-item__empty')
+       const subSkillsListFull = document.querySelectorAll('.container--sub-skill-item__full')
+           //const distributeEmpy = subSkillsListEmpty.map( x => subSkillsListFull.push(x))
+           //distributeEmpy()
+
+           const getRandomInt = (max) => Math.floor(Math.random() * Math.floor(max))
+
+        const list = []
+        const list2 = []
+        const lol = function(){
+            list.push(3)
+            list2.push(subSkillsListEmpty)
+            //const map1 = list2.map( x => list.splice(getRandomInt(5),0,x))
+            const splice1 = list.splice(1,0,4)
+
+            console.log(splice1)
+        }()*/
+       
+       
+    },
+    methods:{
+        ok : function(){
+            const list = [1,2]
+           //list.push(3)
+            const yep = list.slice(1,0,4)
+            console.log(yep)
+        }
     }
 
 }

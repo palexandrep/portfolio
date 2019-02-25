@@ -1,7 +1,7 @@
 <template>
-  <div class="Container--my-work">
-    <SectionHeader id="my-work" :sectionTitle="title"></SectionHeader>
-    <span class="grid-container container-section-content">
+  <div class="container--work">
+    <SectionHeader id="my-work" :lockerClassName="lockerClass" :sectionTitle="title"></SectionHeader>
+    <span class="grid-container container-section-content container--work--content">
       <Samples />
       <Exhibitions/>
     </span>
@@ -23,7 +23,8 @@ export default {
   },
   data: function(){
     return{
-      title: "MY WORK"
+      title: "my work",
+      lockerClass: "locker-work"
     }
   }
 }

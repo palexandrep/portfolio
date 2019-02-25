@@ -13,7 +13,7 @@ export function followPath(el, pathx, pathy){
     });
 }
 
-export function growItem(el,time,scale, elasticity){
+export function growItem(el, time, scale, elasticity){
     anime.remove(el);
     const grow = anime({
         targets: el,
@@ -23,7 +23,7 @@ export function growItem(el,time,scale, elasticity){
     });
 }
 
-export function slideMenu(el,time,translate,elasticity){
+export function slideMenu(el, time, translate, elasticity){
     anime.remove(el);
     const slide = anime({
         targets: el,
@@ -33,7 +33,7 @@ export function slideMenu(el,time,translate,elasticity){
     });
 }
 
-export function animateSquareMenu(el,activeSection){
+export function animateSquareMenu(el, activeSection){
     //anime.remove(el);
     const rolling = anime({
         targets: el,
@@ -56,10 +56,6 @@ export function animateSquareMenu(el,activeSection){
               },
             duration: 300,
         },
-       /* opacity:{
-            value: 1,
-            duration: 300,
-        },*/
           rotate: {
             value: 360,
             duration: 300,
@@ -78,7 +74,7 @@ export function animateSquareMenu(el,activeSection){
     })
 }
 
-export function animateBtn(el,scale,duration){
+export function animateBtn(el, scale, duration){
     anime.remove(el);
     const scaling = anime({
         targets: el,
@@ -101,7 +97,7 @@ export function slideAnimation(el, translation){
     });
 }
 
-export function btnDecorationAnimate(el, translationx,translationy,time,delay){
+export function btnDecorationAnimate(el, translationx, translationy, time, delay){
     anime.remove(el);
     const move = anime({
         targets: el,
@@ -116,3 +112,15 @@ export function btnDecorationAnimate(el, translationx,translationy,time,delay){
     });
 }
 
+export function hideSection(el, height){
+    anime.remove(el);
+    const move = anime({
+        targets: el,
+        duration: 500,
+        height: height,
+        elasticity: 1000,
+        loop: false,
+        easing: 'easeInOutSine',
+        direction: 'alternate'
+    });
+}

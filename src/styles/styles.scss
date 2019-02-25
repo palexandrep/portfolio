@@ -8,7 +8,6 @@
 @import "text.scss";
 @import "components/Button.scss";
 @import "components/SectionHeader/sectionHeader.scss";
-@import "components/SectionHeader/locker.scss";
 
 //---------------header
 
@@ -38,6 +37,10 @@
 
 @import "components/MyWork/Components/samples.scss";
 @import "components/MyWork/Components/exhibitions.scss";
+
+//---------------------my diploma
+
+@import "components/MyDiploma/diploma.scss";
 
 //---------------------footer
 
@@ -96,16 +99,28 @@ p{
     display: block;
 }
 
+//----- posts
+
+.post{
+    background-color: $bgc-col_pale;
+    padding: 30px;
+}
+
 //----------------------- section
 
 .container-section-content{
     margin-top: 80px ;
     margin-bottom: 100px ;
+    overflow-y: hidden;
 }
 
 .container--sub-section{
     margin-top: 100px;
     margin-bottom: 100px;
+}
+
+.container-section-content{
+    max-height: 100%;
 }
 
 

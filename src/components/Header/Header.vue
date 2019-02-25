@@ -9,13 +9,13 @@
           </div>
           <span class="container-header--content-and-subtitle">
             <div class="sub-container-header--content-and-subtitle grid-x">
-              <ContentTeaser class="cell"/>
+              <Carousel :content="carouselComponent" class="cell"/>
               <SubTitle class="container-header--subtitle"/>
             </div>
           </span>
         </span>
         
-        <ScrollArrow :scrollLocation="scrollLinkTarget" :arrowColor="scrollBottomColor"/>
+        <ScrollArrow :btnDirection="bottomArrow" :scrollLocation="scrollLinkTarget" :arrowColor="scrollBottomColor"/>
       </span>
     </header>
   </span>
@@ -23,6 +23,7 @@
 
 <script>
 
+import Carousel from "@/components/Carousel/Carousel.vue"
 import ContentTeaser from "@/components/Header/ContentTeaser.vue"
 import SubTitle from "@/components/Header/SubTitle.vue"
 import ScrollArrow from "@/components/Buttons/ScrollArrow.vue"
@@ -30,46 +31,46 @@ import ScrollArrow from "@/components/Buttons/ScrollArrow.vue"
 export default {
   name: 'Header',
   components:{
-    ContentTeaser,
+    Carousel,
     SubTitle,
     ScrollArrow
   },
   data: function(){
     return{
+      carouselComponent: "ContentTeaser",
+      bottomArrow: "btn--arrow__to-bottom",
       scrollBottomColor: "btn__mid-col",
       scrollLinkTarget: "#about-me",
       mainTitle:{
-        presentation: "HELLO, I'M",
-        title: "ALEXANDRE PIETTE" 
+        presentation: "hello, i'm",
+        title: "alexandre piette" 
       },
       contentTeaser:{
         titles:{
           title1:{
-            name: "CSS",
+            name: "css",
             id: "teaser-title1"
           },
           title2:{
-            name: "JS",
+            name: "js",
             id: "teaser-title2"
           },
           title3:{
-            name: "HTML",
+            name: "html",
             id: "teaser-title3"
           },
           title4:{
-            name: "UX",
+            name: "ux",
             id: "teaser-title4"
           },
           title5:{
-            name: "UI",
+            name: "ui",
             id: "teaser-title5"
           }
         },
         subTitle: "laboratory"
       }
     }
-  },
-  methods:{
   }
 }
 </script>

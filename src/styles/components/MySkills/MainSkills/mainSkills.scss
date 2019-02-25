@@ -2,3 +2,33 @@
     justify-content: center;
     text-align: center;
 }
+
+.title-main-skills{
+    padding: 5px 30px;
+}
+
+.title-main-skills__top{
+    border: solid $white-col_pale;
+    border-width: 2px 2px 0 2px ;
+    //border-radius: 2px 2px 0 0;
+    padding-bottom: 0;
+}
+
+.item-main-skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-main-skills__bottom{
+    border: solid $white-col_pale;
+    border-width: 0px 2px 2px 2px ;
+    //border-radius: 0 0 2px 2px;
+    padding-top: 0;
+}
+
+.main-skills-decoration{
+    width: 2px;
+    height: 20px;
+    background-color: $white-col_pale;
+}

@@ -14,7 +14,7 @@
                         </div>
                     </div>
                 </a>
-                <ImageItem class="cell small-7" :source="sample.iconUrl"/>
+                <ImageItem :source="sample.iconUrl"/>
             </li>
         </ul>
     </div>
@@ -37,7 +37,7 @@ export default {
   data: function(){
     return{
         linkOpen: false,
-        titleSubSection: 'SAMPLES'
+        titleSubSection: 'samples'
     }
   },
   computed:{

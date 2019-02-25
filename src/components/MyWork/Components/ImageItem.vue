@@ -1,7 +1,9 @@
 <template>
-  <figure v-lazyload class="image__wrapper">
-    <img class="image__item" :src="source" alt="random image">
-  </figure>
+  <span class="container--img__sample">
+    <figure v-lazyload class="sub-container--img__sample">
+      <img class="item--img__sample" :src="source" alt="random image">
+    </figure>
+  </span>
 </template>
 
 <script>

@@ -4,9 +4,17 @@ import router from './router'
 import store from './store'
 import vueSmoothScroll from 'vue2-smooth-scroll'
 import {LazyLoadDirective} from "@/assets/js/javaScript.js";
+import VueMq from 'vue-mq'
 
 
 Vue.use(vueSmoothScroll);
+Vue.use(VueMq, {
+  breakpoints: {
+    mobile: 600,
+    //md: 1250,
+    desktop: Infinity,
+  }
+})
 Vue.directive("lazyload", LazyLoadDirective);
 
 Vue.config.productionTip = false

@@ -16,8 +16,8 @@ export default {
     data: function(){
         return{
             subTitle:{
-                partOne: "FRONT",
-                partTwo: "END",
+                partOne: "front",
+                partTwo: "end",
                 partThree: "developer"
             },
         }

@@ -1,37 +1,64 @@
 import {slideMenu} from '@/assets/js/animeFunctions.js'
 import {animateSquareMenu} from '@/assets/js/animeFunctions.js'
 
+//---------- Menu functions
+
 export function toggleMenu(){
-  const blurs = document.querySelectorAll('.bgd-blur')
-  const burger = document.querySelector('.btn-burger');
+  const squares = document.querySelectorAll('.square'),
+        blurs = document.querySelectorAll('.bgd-blur'),
+        burger = document.querySelector('.btn-burger');
+  //---- click to open
   if(this.$store.state.menu.menuActif === false){
-    slideMenu('.container-menu__mobile', 500, -80,100)
+
+    //---- squares animations
+    //-- fade
+    squares.forEach(function(item){
+      item.classList.add('square__opacity')
+    })
+    //-- slide + rolling
+    animateSquareMenu('.square','.menu--item:nth(1) square')
+    slideMenu('.container-menu__mobile', 500, -80,50)
     burger.classList.add('btn-burger__actif');
+    //----------- change store status
     this.$store.commit('MenuActif')
+
     for(let blur of blurs){
       blur.classList.add('bgd-blur__active')
     }
   }
+  //---- click to close
   else{
-      slideMenu('.container-menu__mobile', 1000, 100,400)
+
+      //---- squares animations
+      //-- fade
+      squares.forEach(function(item){
+        item.classList.remove('square__opacity')
+      })
+      //-- slide
+      slideMenu('.container-menu__mobile', 1000, 100,100)
       burger.classList.remove('btn-burger__actif');
+      //----------- change store status
       this.$store.commit('MenuActif')
+
       for(let blur of blurs){
       blur.classList.remove('bgd-blur__active')
     }
   }
 }
 
-
 //--- item menu active still need to be debugged
-export function rollingSquare(stateOfMenu){
+/*export function rollingSquare(stateOfMenu){
+  const squares = document.querySelectorAll('.square')
   if(stateOfMenu !== false){
     animateSquareMenu('.square','.menu--item:nth(1) square')
   }
   else{
+    squares.forEach(function(item){
+      item.classList.remove('square__opacity')
+    })
     return
   }
-}
+}*/
 
 export function LazyLoadDirective(){
   inserted: el => {

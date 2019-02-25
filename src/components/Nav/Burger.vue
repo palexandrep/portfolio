@@ -1,5 +1,5 @@
 <template>
-    <button v-on:click="toggleMenu(), rollingSquare(menuActif)" class="btn-burger">
+    <button v-on:click="toggleMenu()" class="btn-burger">
       <span class="burger">
         <span class="burger__line burger__line--top"></span>
         <span class="burger__line burger__line--center"></span>
@@ -12,7 +12,6 @@
 
 import anime from 'animejs'
 import {toggleMenu} from '@/assets/js/javaScript.js'
-import {rollingSquare} from '@/assets/js/javaScript.js'
 import { mapGetters } from 'vuex'
 
 export default {
@@ -29,7 +28,6 @@ export default {
   },
   mounted: function(){
     this.toggleMenu = toggleMenu
-    this.rollingSquare = rollingSquare
   }
 }
 </script>

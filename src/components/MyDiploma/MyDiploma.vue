@@ -1,8 +1,7 @@
 <template>
-  <div class="container--my-diploma">
-    <SectionHeader id="my-diploma" :sectionTitle="title"></SectionHeader>
-    <span class="grid-container container-section-content">
-      <span class="separation-bar separation-bar__diploma"></span>
+  <div class="container--diploma">
+    <SectionHeader id="my-diploma" :lockerClassName="lockerClass" :sectionTitle="title"></SectionHeader>
+    <span class="grid-container container--diploma--content container-section-content">
       <DiplomaItem/>
     </span>
   </div>
@@ -13,8 +12,6 @@
 import SectionHeader from '@/components/SectionHeader/SectionHeader.vue'
 import DiplomaItem from '@/components/MyDiploma/DiplomaItem/DiplomaItem.vue'
 
-
-
 export default {
   name: 'Contact',
   components:{
@@ -23,10 +20,9 @@ export default {
   },
   data: function(){
     return{
-      title:"MY DIPLOMA"
+      title:"my diploma",
+      lockerClass: "locker-diploma",
     }
-  },
-  methods:{
   }
 }
 </script>

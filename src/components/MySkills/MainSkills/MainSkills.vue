@@ -1,8 +1,6 @@
 <template>
     <div class="container--main-skills">
-        <span class="container--sub-title">
-            <h4 class="title sub-title title__white">{{title}}</h4>
-        </span>
+        <SubSectionTitle :title='distributeTitle()' />
         <div class="container--sub-section">
             <MainSkill/>
             <DNA class="item-main-skills text-main-skills"/>
@@ -15,17 +13,24 @@
 
 import DNA from '@/components/MySkills/MainSkills/DNA.vue'
 import MainSkill from '@/components/MySkills/MainSkills/MainSkill.vue'
+import SubSectionTitle from "@/components/SectionHeader/SubSection/SubSectionTitle.vue"
 
 export default {
   name: 'MainSkills',
   components:{
       DNA,
-      MainSkill
+      MainSkill,
+      SubSectionTitle
   },
     data: function(){
         return{
-            title: 'MAIN SKILLS',
-            check:true
+            titleSubSection: 'main skills',
+            check: true
+        }
+    },
+    methods:{
+        distributeTitle: function(){
+            return this.titleSubSection
         }
     }
 }

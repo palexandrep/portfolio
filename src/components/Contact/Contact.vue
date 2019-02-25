@@ -1,7 +1,7 @@
 <template>
-  <div class="Container--contact">
-    <SectionHeader id="contact" :sectionTitle="title"></SectionHeader>
-    <span class="grid-container container-section-content">
+  <div class="container--contact">
+    <SectionHeader id="contact" :lockerClassName="lockerClass" :sectionTitle="title"></SectionHeader>
+    <span class="grid-container container--contact--content container-section-content">
       <Button :btnTitle="firstBtnText"/>
       <Button :btnTitle="secondBtnText"/>
     </span>
@@ -24,12 +24,11 @@ export default {
   },
   data: function(){
     return{
-      title: "CONTACT",
-      firstBtnText: "DOWNLOAD MY CV",
-      secondBtnText: "CONTACT ME"
+      title: "contact",
+      lockerClass: "locker-contact",
+      firstBtnText: "download my cv",
+      secondBtnText: "contact me"
     }
-  },
-  methods:{
   }
 }
 </script>

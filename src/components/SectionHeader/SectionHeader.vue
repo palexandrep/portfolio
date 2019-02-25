@@ -1,6 +1,6 @@
 <template>
   <div class="container-section-title grid-x">
-    <Locker class="cell small-2"/>
+    <Locker class="cell small-2" :sectionName='lockerClassName'/>
     <span class="box-section-title cell small-10">
       <h3 class="title section-title">{{sectionTitle}}</h3>
     </span>
@@ -10,7 +10,7 @@
 <script>
 
 import anime from 'animejs'
-import Locker from "@/components/SectionHeader/Locker.vue"
+import Locker from "@/components/Buttons/Locker.vue"
 //import {} from '@/assets/js/animeFunctions'
 
 export default {
@@ -22,10 +22,11 @@ export default {
     sectionTitle:{
       type: String,
       required: true
+    },
+    lockerClassName:{
+      type: String,
+      required: true
     }
-  },
-  methods:{
-
   }
 }
 </script>

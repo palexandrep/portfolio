@@ -1,19 +1,25 @@
 <template>
-    <SubSectionTitle :title="title"/>
+    <span>
+        <SubSectionTitle :title="title"/>
+        <Carousel :content="carouselComponent"/>
+    </span>
 </template>
 
 <script>
 
+import Carousel from "@/components/Carousel/Carousel.vue"
 import SubSectionTitle from "@/components/SectionHeader/SubSection/SubSectionTitle.vue" 
 
 export default {
     name: "Exhibitions",
     components:{
-        SubSectionTitle
+        SubSectionTitle,
+        Carousel
     },
     data:function(){
         return{
-            title: "EXHIBITIONS"
+            carouselComponent: "ContentExhibitions",
+            title: "exhibitions"
         }
     }
 

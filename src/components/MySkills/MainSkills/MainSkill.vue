@@ -1,12 +1,14 @@
 <template>
-        <ul class="container-list-main-skills grid-x" v-if="bottom !== true">
-            <li class="item-main-skills text-main-skills cell small-4" v-bind:key="skill" v-for="skill in skills">
-                <h4 class="title title__white">{{skill}}</h4>
+        <ul class="container-list-main-skills grid-x grid-margin-x" v-if="bottom !== true">
+            <li class="item-main-skills item-main-skills__top text-main-skills cell small-4" v-bind:key="skill" v-for="skill in skills">
+                <span class="main-skills-decoration"></span>
+                <h4 class="title-main-skills title-main-skills__top title title__mid-color">{{skill}}</h4>
             </li>
         </ul>
-        <ul class="container-list-main-skills grid-x" v-else>
-            <li class="item-main-skills text-main-skills cell small-6" v-bind:key="skill" v-for="skill in skillsFiltered">
-                <h4 class="title title__white">{{skill}}</h4>
+        <ul class="container-list-main-skills grid-x grid-margin-x" v-else>
+            <li class="item-main-skills item-main-skills__bottom text-main-skills cell small-6" v-bind:key="skill" v-for="skill in skillsFiltered">
+                <h4 class="title-main-skills title-main-skills__bottom title title__mid-color">{{skill}}</h4>
+                <span class="main-skills-decoration"></span>
             </li>
         </ul>
 </template>
@@ -23,8 +25,8 @@ export default {
   },
     data: function(){
         return{
-            title: 'MAIN SKILLS',
-            skills: ['CSS','UX','HTML','JS','UI'],
+            title: 'main skills',
+            skills: ['css','ux','html','js','ui'],
             skillsFiltered:''
         }
     },

@@ -18,10 +18,6 @@ export default {
       dnaLenght: 12
     }
   },
-  methods:{
-
-  },
-  
   mounted: function(){
     const self = this;
     function createChild(){

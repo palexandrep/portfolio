@@ -1,3 +1,20 @@
+//---------------- Desktop
+
+.container-menu__desktop{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    background-color: $bgc-col;
+    z-index: 15;
+
+    .menu--item{
+        padding: 5px 40px;
+    }
+}
+
+
+//---------------- Mobile
 .container--menu__mobile{
 
     .container-menu__mobile{
@@ -28,27 +45,22 @@
         background-color: $mid-col;
         float: left;
         margin-right: 30px;
-        //opacity: 0;
-        // transform: translateX(58px);
-        //opacity: 0.3;
     }
 
-    .squareActiveSection{
+    .square__opacity{
         animation-name: activesquare;
-        animation-delay: 2s;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease-in-out;
-        animation-duration: 2s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in;
+        animation-duration: 0.2s;
+        animation-direction: forwards;
+
     }
     @keyframes activesquare{
         0%{
-            background-color: red;
-        }
-        50%{
-            background-color: red;
+            opacity: 0;
         }
         100%{
-            background-color: red;
+            opacity: 1;
         }
     }
     

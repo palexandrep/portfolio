@@ -12,12 +12,17 @@
 
 
 .title{
+    text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
     font-weight: bolder;
     margin: 0;
 }
 
-.text{
+.title__header, .text__header, .menu--item{
+    text-transform: uppercase;
+}
+
+.text, .title__header, .text__header{
     font-family: "Poiret One", sans-serif;
 }
 
@@ -28,6 +33,10 @@
 
 .title__big, .text__big{
     font-size: 30px;
+}
+
+.text__normal{
+    font-size: 20px;
 }
 
 .text__small{
@@ -42,13 +51,10 @@
     color: $white-col;
 }
 
-.title__mid-color, .text__mid-color{
-    color: $mid-col;
+.title__pale{
+    color: $white-col_pale;
 }
 
-.container--sub-title{
-    width: 100%;
-    padding: 0;
-    text-align: center;
-    background-color: $bgc-col_pale;
+.title__mid-color, .text__mid-color{
+    color: $mid-col;
 }

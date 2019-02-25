@@ -1,7 +1,7 @@
 <template>
     <div class="menu">
-        <MobileMenu/>
-        <!--<DesktopMenu/>-->
+        <MobileMenu v-if="$mq === 'mobile'"/>
+        <DesktopMenu v-else/>
     </div>
 </template>
 
@@ -16,6 +16,5 @@ export default {
       DesktopMenu,
       MobileMenu
   }
-
 }
 </script>

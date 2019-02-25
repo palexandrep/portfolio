@@ -3,6 +3,7 @@ button:focus{
 }
 
 button{
+    text-transform: uppercase;
     user-select: none;
     -webkit-tap-highlight-color: transparent;
 }
@@ -15,6 +16,12 @@ button{
     }
 }
 
+//------------------ locker
+
+.sub-container-locker{
+  margin: 0;
+}
+
 //------------------ arrow
 
 .btn__blue{
@@ -25,14 +32,17 @@ button{
   transform: rotate(180deg);
 }
 
-.btn__mid-col{
-  fill: $mid-col;
+.btn--arrow__to-bottom{
+    position: absolute;
+    margin-top: 15vh;
+    padding-top: 10vh;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
-.containr-btn--arrow-btn__down-arrow{
-    position: absolute;
-    padding-top: 10vh;
-    width: 65%;
+.btn__mid-col{
+  fill: $mid-col;
 }
 
 .containr-btn--arrow-btn{
@@ -133,40 +143,43 @@ button{
 
 .bubble-container--top{
   .bubble:nth-child(1){
-    @include bubbleModifier(-70px, 30px, 5px, -1.2s, 3.3s);
+    @include bubbleModifier(-70px, 30px, 15px, -1.2s, 3.3s);
   }
   .bubble:nth-child(2){
-    @include bubbleModifier(-45px, 60px, 5px, -1s, 3.5s);
+    @include bubbleModifier(-45px, 60px, 25px, -1s, 3.5s);
   }
   .bubble:nth-child(3){
     @include bubbleModifier(-10px, 45px, 10px, 0s, 3.7s);
   }
   .bubble:nth-child(4){
-    @include bubbleModifier(50px, 50px, 5px, -0.3s, 5.5s);
+    @include bubbleModifier(50px, 50px, 14px, -0.3s, 5.5s);
   }
   .bubble:nth-child(5){
-    @include bubbleModifier(110px, 78px, 6px, -0.7s, 4.3s);
+    @include bubbleModifier(100px, 78px, 17px, -0.7s, 4.3s);
   }
   .bubble:nth-child(6){
-    @include bubbleModifier(-130px, 67px, 12px, -0.7s, 4.3s);
+    @include bubbleModifier(-120px, 67px, 12px, -0.7s, 4.3s);
   }
 }
 
 .bubble-container--bottom{
   .bubble:nth-child(1){
-    @include bubbleModifier(-75px, -58px, 8px, -0.2s, 4.6s);
+    @include bubbleModifier(-75px, -58px, 18px, -0.2s, 4.6s);
   }
   .bubble:nth-child(2){
-    @include bubbleModifier(-50px, -55px, 12px, -1.2s, 4.2s);
+    @include bubbleModifier(-50px, -55px, 11px, -1.2s, 4.2s);
   }
   .bubble:nth-child(3){
     @include bubbleModifier(-20px, -45px, 6px, -2s, 7.5s);
   }
   .bubble:nth-child(4){
-    @include bubbleModifier(25px, -52px, 3px, -0.8s, 5.7s);
+    @include bubbleModifier(25px, -52px, 7px, -0.8s, 5.7s);
   }
   .bubble:nth-child(5){
-    @include bubbleModifier(90px, -60px, 15px, -3s, 6.1s);
+    @include bubbleModifier(50px, -60px, 15px, -3s, 6.1s);
+  }
+  .bubble:nth-child(6){
+    @include bubbleModifier(55px, -67px, 19px, -3s, 6.1s);
   }
 }
 
@@ -202,4 +215,42 @@ button{
 .container-btn__switch{
   display: flex;
   
+}
+
+
+//----------------- Locker
+
+
+
+
+.locker-color{
+  fill:$bgc-col;
+}
+
+#locker{
+  transform: scale(0.5);
+}
+
+
+.container-locker{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-decoration__circle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid $stroke-width+1 $bgc-col;
+  border-radius: 100%;
+  min-width:40px;
+  min-height: 40px;
+}
+
+.decoration-locker{
+  height: 100%;
+  background-color: $bgc-col;
+  width: $stroke-width+1;
 }
