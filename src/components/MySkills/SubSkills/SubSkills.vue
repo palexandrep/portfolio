@@ -1,6 +1,6 @@
 <template>
     <div class="container--sub-skills">
-        <SubSectionTitle :title='distributeTitle()' />
+        <SubSectionTitle :title="titleSubSection" />
         <SubSkillItem class="container--sub-section" />
     </div>
 </template>
@@ -21,11 +21,6 @@ export default {
     components:{
         SubSkillItem,
         SubSectionTitle
-    },
-    methods:{
-        distributeTitle: function(){
-            return this.titleSubSection
-        }
     }
 }
 </script>

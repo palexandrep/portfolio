@@ -2,13 +2,13 @@
   <div class="home row">
     <span v-on:click="handler()" v-if="menuActif=== true" class="menu--blur-filter__active"></span>
     <Nav/>
-    <Header class="bgd-blur"/>
-    <AboutMe class="bgd-blur"/>
-    <MySkills class="bgd-blur"/>
-    <MyExperiences class="bgd-blur"/>
-    <MyDiploma class="bgd-blur"/>
-    <MyWork class="bgd-blur"/>
-    <Contact class="bgd-blur"/>
+    <Header class="global-section__header bgd-blur"/>
+    <AboutMe class="global-section__about bgd-blur"/>
+    <MySkills class="global-section__skills bgd-blur"/>
+    <MyExperiences class="global-section__experiences bgd-blur"/>
+    <MyDiploma class="global-section__diploma bgd-blur"/>
+    <MyWork class="global-section__work bgd-blur"/>
+    <Contact class="global-section__contact bgd-blur"/>
   </div>
 </template>
 

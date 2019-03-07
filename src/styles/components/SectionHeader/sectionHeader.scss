@@ -2,21 +2,22 @@
     width: 100%;
     height: 100px;
     background-color: $mid-col;
+    position: relative;
 }
 
 .box-section-title{
+    height: 100%;
     color: $white-col_pale;
     display: flex;
+    justify-content: center;
     align-items: center;
-    //padding-left: 200px;
 }
-
 
 //------------- sub section 
 
 .container--sub-title{
     width: 100%;
-    padding: 0;
+    padding: $padding__small 0;
     text-align: center;
     background: $bgc-col_pale-gradient;
 }

@@ -4,7 +4,7 @@
         <div id="coucou" class="bubble-container bubble-container--top">
             <BtnDecorations/>
         </div>
-        <a href="./img/cvalexandrepiette.pdf" download class="btn btn__call-to title title__small" @mousedown="enterBtn()" @mouseup="leaveBtn()">{{btnTitle}}</a>
+        <a :href="btnLink" download class="btn btn__call-to title title__small shadow-version" @mousedown="enterBtn()" @mouseup="leaveBtn()">{{btnTitle}}</a>
         <div class="bubble-container bubble-container--bottom">
             <BtnDecorations/>
         </div>
@@ -27,8 +27,8 @@ export default {
     },
     data:function(){
         return{
-            triggerAnimation: true
-            //btnLink: require('@/assets/img/cvalexandrepiette.pdf') 
+            triggerAnimation: true,
+            btnLink: /*require('@/assets/img/cvalexandrepiette.pdf') */  0
         }
     },
     computed:{

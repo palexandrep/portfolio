@@ -1,6 +1,6 @@
 <template>
     <div class="container--main-skills">
-        <SubSectionTitle :title='distributeTitle()' />
+        <SubSectionTitle :title='titleSubSection' />
         <div class="container--sub-section">
             <MainSkill/>
             <DNA class="item-main-skills text-main-skills"/>
@@ -26,11 +26,6 @@ export default {
         return{
             titleSubSection: 'main skills',
             check: true
-        }
-    },
-    methods:{
-        distributeTitle: function(){
-            return this.titleSubSection
         }
     }
 }

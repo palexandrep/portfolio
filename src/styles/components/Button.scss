@@ -34,7 +34,7 @@ button{
 
 .btn--arrow__to-bottom{
     position: absolute;
-    margin-top: 15vh;
+    margin-top: 12vh;
     padding-top: 10vh;
     display: flex;
     justify-content: center;
@@ -214,38 +214,42 @@ button{
 
 .container-btn__switch{
   display: flex;
-  
 }
 
 
 //----------------- Locker
 
 
-
-
 .locker-color{
   fill:$bgc-col;
 }
 
-#locker{
+.locker{
   transform: scale(0.5);
 }
 
+.locker__closed{
+  transform: translateY(8px);
+  transition: transform 0.2s;
+}
 
 .container-locker{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100%;
+  position: absolute;
+  padding-left: 3%;
 }
 
 .box-decoration__circle{
   display: flex;
   justify-content: center;
   align-items: center;
-  border: solid $stroke-width+1 $bgc-col;
+  border: solid $border+1 $bgc-col;
   border-radius: 100%;
-  min-width:40px;
+  min-width: 40px;
   min-height: 40px;
 }
 

@@ -59,8 +59,10 @@
 
 .title__header--subtitle__1, .title__header--subtitle__2{
     font-size: 48px;
-    line-height: 0.85;
+    line-height: 0.82;
     letter-spacing: -2px;
+    position: relative;
+    top:-2px;
 }
 
 .container-header--content-and-subtitle{

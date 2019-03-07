@@ -1,6 +1,6 @@
 <template>
     <span>
-        <SubSectionTitle :title='distributeTitle()' />
+        <SubSectionTitle :title='titleSubSection' />
         <div class="container-preferences container--sub-section">
             <Microscope/>
             <span class="container-btn__switch">
@@ -36,11 +36,6 @@ export default {
 
         switchBtnsVal(){
             return this.$store.state.switchBtnsVal
-        }
-    },
-    methods:{
-        distributeTitle: function(){
-            return this.titleSubSection
         }
     }
 }

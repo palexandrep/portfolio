@@ -1,7 +1,7 @@
 <template>
   <div class="container--contact">
     <SectionHeader id="contact" :lockerClassName="lockerClass" :sectionTitle="title"></SectionHeader>
-    <span class="grid-container container--contact--content container-section-content">
+    <span class="container--contact--content container-section-content">
       <Button :btnTitle="firstBtnText"/>
       <Button :btnTitle="secondBtnText"/>
     </span>

@@ -1,21 +1,13 @@
 @font-face {
-    font-family: "Anton";
-    src: url("assets/fonts/Anton/Anton-Regular.woff2") format("woff2"),
-         url("assets/fonts/Anton/Anton-Regular.ttf") format("ttf");
+    font-family: "Oswald";
+    src: //url("assets/fonts/Oswald/Oswald-Bold.woff2") format("woff2"),
+         url("assets/fonts/Oswald/Oswald-Bold.ttf") format("ttf");
 }
 
 @font-face {
     font-family: "Poiret One";
     src: url("assets/fonts/Poiret_One/PoiretOne-Regular.woff2") format("woff2"),
          url("assets/fonts/Poiret_One/PoiretOne-Regular.ttf") format("ttf");
-}
-
-
-.title{
-    text-transform: uppercase;
-    font-family: 'Oswald', sans-serif;
-    font-weight: bolder;
-    margin: 0;
 }
 
 .title__header, .text__header, .menu--item{
@@ -28,24 +20,31 @@
 
 .title{
     color: $white-col;
+    text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
+    font-weight: bolder;
+    margin: 0;
 }
 
+//-- sizes
+
 .title__big, .text__big{
-    font-size: 30px;
+    font-size: 28px;
 }
 
 .text__normal{
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .text__small{
-    font-size: 15px;
+    font-size: 19px;
 }
 
 .text__tiny{
-    font-size: 10px;
+    font-size: 12px;
 }
+
+//--- colors
 
 .title__white, .text__white{
     color: $white-col;

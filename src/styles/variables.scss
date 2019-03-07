@@ -2,22 +2,29 @@
 
 $bgc-col: #0B0F1D;
 $bgc-col_pale: #1A1D28;
+$bgc-col_pale-opacity: rgba(26,29,40,0.2);
 $bgc-col_pale-gradient: linear-gradient(to right, rgba(26,29,40,0) 0%,rgba(26,29,40,1) 30%,rgba(26,29,40,1) 70%,rgba(26,29,40,0) 100%);
 $mid-col: #D24116;
 $white-col: #FFFFFF;
 $white-col_pale: #D8D8D8;
 
-
-
-// fonts
-
-$anton: 'Anton', sans-serif;
-$poiret: 'Poiret One', cursive;
-
 // sizes
 
 $padding__small: 5px;
 $padding__big: 15px;
+$padding__extra-big: 30px;
 $padding__sub-section: 10vh;
 
+// borders
+
+$border: 2px;
 $stroke-width: 2px;
+
+//------- mixins
+
+@mixin gridChild($cstart,$cend,$rstart,$rend){
+    grid-column-start: $cstart;
+    grid-column-end: $cend;
+    grid-row-start: $rstart;
+    grid-row-end: $rend;
+  }

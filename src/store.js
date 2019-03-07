@@ -137,7 +137,7 @@ const sections = {
   exp: {
     nb:3,
     id: "exp",
-    name: 'my experiencees',
+    name: 'my experiences',
     anchor: "#my-experiences",
     seen: false,
     closed: false
@@ -165,6 +165,103 @@ const sections = {
     anchor: "#contact",
     seen: false,
     closed: false
+  }
+}
+
+//---------------experiences
+
+const experiences = {
+  domains:{
+    learning:{
+      id: "learning",
+      img: require("@/assets/img/learning.svg"),
+      experiences:{
+        exp:{
+          value: 1,
+          id: "learn-exp1",
+          textFat: "Learning",
+          textSmall: "on my own"
+        }
+      }
+    },
+    design:{
+      id:"design",
+      img: require("@/assets/img/design.svg"),
+      experiences:{
+        exp1:{
+          value: 1,
+          id: "design-exp1",
+          textFat: "UI and newsletters",
+          textSmall: "integration for YAKimmo"
+        },
+        exp2:{
+          value: 2,
+          id: "design-exp2",
+          textFat: "UI and UX",
+          textSmall: "for 'La Rondinella' website"
+        },
+        exp3:{
+          value: 3,
+          id: "design-exp3",
+          textFat: "Playzone",
+          textSmall: "participation in UI, UX and integration ( 2017 edition )"
+        },
+        exp4:{
+          value: 4,
+          id: "design-exp4",
+          textFat: "Web Design",
+          textSmall: "internship in Tacite"
+        }
+      }
+    },
+    teatching:{
+      id:"teatching",
+      img: require("@/assets/img/teacher.svg"),
+      experiences:{
+        exp1:{
+          value: 1,
+          id: "teatch-exp1",
+          textFat: "Art teatcher",
+          textSmall: "( IND shcool Fleurus )"
+        },
+        exp2:{
+          value: 2,
+          id: "teatch-exp2",
+          textFat: "Art teatcher",
+          textSmall: "( Kalleis shcool Waterloo )"
+        }
+      }
+    },
+    coding:{
+      id: "coding",
+      img: require("@/assets/img/integration.svg"),
+      experiences:{
+        exp1:{
+          value: 1,
+          id: "code-exp1",
+          textFat: "Hackathon:",
+          textSmall: "second place for the Datakathon organized by the CEPEGRA in 2017"
+        },
+        exp2:{
+          value: 2,
+          id: "code-exp2",
+          textFat: "Front End",
+          textSmall: "internship in MIGHDY"
+        }
+      }
+    },
+    art:{
+      id:"art",
+      img: require("@/assets/img/artist.svg"),
+      experiences:{
+        exp1:{
+          value: 1,
+          id: "art-exp1",
+          textFat: "Art exhibition:",
+          textSmall: "Gallerie Koma, Simply Seen, On Air Studio, CALVAS en folie, Thanks galerie..."
+        }
+      }
+    }
   }
 }
 
@@ -244,7 +341,8 @@ export default new Vuex.Store({
     samples,
     contentTeaser,
     contentExhibitions,
-    switchBtnsVal
+    switchBtnsVal,
+    experiences
   },
   mutations: mutations,
   getters: getters,

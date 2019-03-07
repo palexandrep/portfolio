@@ -1,6 +1,6 @@
-@import "normalize.scss";
-@import "foundation.min.scss";
-@import "glide.core";
+@import "Vendors/normalize.scss";
+@import "Vendors/foundation.min.scss";
+@import "Vendors/glide.core";
 @import "variables.scss";
 
 //-------------global
@@ -46,12 +46,16 @@
 
 @import "components/Contact/footer.scss";
 
+//---------------------posts
+
+@import "components/Posts/post.scss";
+
 // xy grid
 
 //@import "~";
 
-// global settings
 
+//--------------------- global settings
 
 
 .center{
@@ -61,10 +65,6 @@
 
 a:visited, a:active, a:hover, a{
     text-decoration: none;
-}
-
-.border{
-    border: solid 1px red;
 }
 
 #app {
@@ -99,24 +99,25 @@ p{
     display: block;
 }
 
-//----- posts
+//------------- shadows
 
-.post{
-    background-color: $bgc-col_pale;
-    padding: 30px;
+.shadow-version{
+    box-shadow: 0 0 35px rgba(6, 0, 27, 0.5);
 }
 
 //----------------------- section
 
 .container-section-content{
-    margin-top: 80px ;
-    margin-bottom: 100px ;
+    padding-top: 80px ;
+    padding-bottom: 100px ;
     overflow-y: hidden;
+    width: 80%;
+    margin: auto;
 }
 
 .container--sub-section{
-    margin-top: 100px;
-    margin-bottom: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .container-section-content{

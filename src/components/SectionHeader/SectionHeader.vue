@@ -1,8 +1,8 @@
 <template>
-  <div class="container-section-title grid-x">
-    <Locker class="cell small-2" :sectionName='lockerClassName'/>
-    <span class="box-section-title cell small-10">
-      <h3 class="title section-title">{{sectionTitle}}</h3>
+  <div class="container-section-title">
+    <Locker class="" :sectionName='lockerClassName'/>
+    <span class="box-section-title">
+      <h3 class="title section-title title__big">{{sectionTitle}}</h3>
     </span>
   </div>
 </template>

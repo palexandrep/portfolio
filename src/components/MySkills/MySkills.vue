@@ -1,7 +1,7 @@
 <template>
     <div class="container--skills">
         <SectionHeader id="my-skills" :lockerClassName="lockerClass" :sectionTitle="title"></SectionHeader>
-        <span class="grid-container container--skills--content container-section-content">
+        <span class="container--skills--content container-section-content">
             <MainSkills/>
             <SubSkills/>
             <Preferences/>

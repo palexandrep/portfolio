@@ -1,7 +1,7 @@
 <template>
   <div class="container--work">
     <SectionHeader id="my-work" :lockerClassName="lockerClass" :sectionTitle="title"></SectionHeader>
-    <span class="grid-container container-section-content container--work--content">
+    <span class="container-section-content container--work--content">
       <Samples />
       <Exhibitions/>
     </span>
