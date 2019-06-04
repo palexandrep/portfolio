@@ -71,7 +71,16 @@ button{
     from{transform: translateY(0px);}
     to{transform: translateY(20px);}
 }
+/*
+.btn--arrow__to-the-top{
 
+  svg{
+    padding: $padding__small;
+    border: solid $border $bgc-col;
+    border-radius: 100%;
+  }
+}
+*/
 //---------------------- call-to-A btn
 
 
@@ -85,9 +94,10 @@ button{
   position: relative;
   z-index: 2;
   transform: origin(center);
-  width: 200px;
+  width: 350px;
   text-align: center;
   margin: 60px 0px;
+  border-radius: $radius;
 }
 
 .container--btn__call-to{
@@ -143,57 +153,57 @@ button{
 
 .bubble-container--top{
   .bubble:nth-child(1){
-    @include bubbleModifier(-70px, 30px, 15px, -1.2s, 3.3s);
+    @include bubbleModifier(-70px, 30px, 10px, -1.2s, 3.3s);
   }
   .bubble:nth-child(2){
-    @include bubbleModifier(-45px, 60px, 25px, -1s, 3.5s);
+    @include bubbleModifier(-45px, 60px, 20px, -1s, 3.5s);
   }
   .bubble:nth-child(3){
-    @include bubbleModifier(-10px, 45px, 10px, 0s, 3.7s);
+    @include bubbleModifier(-10px, 45px, 8px, 0s, 3.7s);
   }
   .bubble:nth-child(4){
-    @include bubbleModifier(50px, 50px, 14px, -0.3s, 5.5s);
+    @include bubbleModifier(50px, 50px, 12px, -0.3s, 5.5s);
   }
   .bubble:nth-child(5){
-    @include bubbleModifier(100px, 78px, 17px, -0.7s, 4.3s);
+    @include bubbleModifier(100px, 78px, 14px, -0.7s, 4.3s);
   }
   .bubble:nth-child(6){
-    @include bubbleModifier(-120px, 67px, 12px, -0.7s, 4.3s);
+    @include bubbleModifier(-120px, 67px, 8px, -0.7s, 4.3s);
   }
 }
 
 .bubble-container--bottom{
   .bubble:nth-child(1){
-    @include bubbleModifier(-75px, -58px, 18px, -0.2s, 4.6s);
+    @include bubbleModifier(-75px, -58px, 7px, -0.2s, 4.6s);
   }
   .bubble:nth-child(2){
-    @include bubbleModifier(-50px, -55px, 11px, -1.2s, 4.2s);
+    @include bubbleModifier(-50px, -55px, 6px, -1.2s, 4.2s);
   }
   .bubble:nth-child(3){
-    @include bubbleModifier(-20px, -45px, 6px, -2s, 7.5s);
+    @include bubbleModifier(-20px, -45px, 5px, -2s, 7.5s);
   }
   .bubble:nth-child(4){
     @include bubbleModifier(25px, -52px, 7px, -0.8s, 5.7s);
   }
   .bubble:nth-child(5){
-    @include bubbleModifier(50px, -60px, 15px, -3s, 6.1s);
+    @include bubbleModifier(50px, -60px, 8px, -3s, 6.1s);
   }
   .bubble:nth-child(6){
-    @include bubbleModifier(55px, -67px, 19px, -3s, 6.1s);
+    @include bubbleModifier(55px, -67px, 5px, -3s, 6.1s);
   }
 }
 
 @keyframes bubbleOpacity{
   0%{
-    $i:random(9);
+    $i:random(3);
     opacity: 0.1;
   }
   50%{
-    $i:random(9);
+    $i:random(3);
     opacity: 0;
   }
   100%{
-    $i:random(9);
+    $i:random(3);
     opacity: 0.1;
   }
 }
@@ -202,7 +212,7 @@ button{
 
 .btn__switch{
   background-color: $mid-col;
-  color: $white-col;
+  color: $bgc-col;
   width: 30px;
   height: 30px;
   padding: 20px;
@@ -221,7 +231,7 @@ button{
 
 
 .locker-color{
-  fill:$bgc-col;
+  fill: $white-col_pale;
 }
 
 .locker{
@@ -243,18 +253,18 @@ button{
   padding-left: 3%;
 }
 
-.box-decoration__circle{
+/*.box-decoration__circle{
   display: flex;
   justify-content: center;
   align-items: center;
-  border: solid $border+1 $bgc-col;
+  border: solid $border+1 $white-col_pale;
   border-radius: 100%;
   min-width: 40px;
   min-height: 40px;
-}
+}*/
 
 .decoration-locker{
   height: 100%;
-  background-color: $bgc-col;
+  //background-color: $white-col_pale;
   width: $stroke-width+1;
 }

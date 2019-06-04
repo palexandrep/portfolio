@@ -4,6 +4,7 @@
 
 .container--img-experience{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -20,35 +21,53 @@
     margin-bottom: 15px;
 }
 
+.container-experiences-separation{
+    margin-top: 15px;
+}
+
 //------------ Experience separation
 
 .experiences-separation{
-    width: 66%;
-    margin-left: 17%;
+    width: calc((100%/3)*2);
+    margin-left: calc(100%/6);
 }
 
 .experiences-separation__top{
-    border-left: 2px solid $white-col_pale;
-    border-bottom: 2px solid $white-col_pale;
+    border-left: 2px solid $white-col;
+    border-bottom: 2px solid $white-col;
     height: 48px;
+    border-radius: 0 0 0$radius;
 }
 
 .group--experiences:nth-child(even) .experiences-separation__top{
-    border-right: 2px solid $white-col_pale;
+    border-right: 2px solid $white-col;
     border-left: none;
+    border-radius: 0 0 $radius 0;
 }
 
 .experiences-separation__bottom{
-    border-right: 2px solid $white-col_pale;
+    border-right: 2px solid $white-col;
+    border-top: 2px solid $white-col;
     height: 50px;
+    border-radius: 0 $radius 0 0;
+    position: relative;
+    top: -2px;
+    left: 3px;
 }
 
 .group--experiences:nth-child(even) .experiences-separation__bottom{
-    border-left: 2px solid $white-col_pale;
+    border-left: 2px solid $white-col;
     border-right: none;
+    border-radius: $radius 0 0 0;
+    left: -3px;
 }
 
 .group--experiences:nth-child(5) .container-experiences-separation{
     width: 50%;
-    margin-left: 8.5%;
+    margin-left: calc(100%/12);
+}
+
+.container--img-experience__conclusion .group--img-experience{
+    position: relative;
+    left: 2px;
 }

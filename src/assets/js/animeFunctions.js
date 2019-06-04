@@ -124,3 +124,35 @@ export function hideSection(el, height){
         direction: 'alternate'
     });
 }
+
+export function animCell(el, maxLat, minLat, maxLong, minLong, delay, time){
+    anime({
+        targets: el,
+
+        keyframes:[
+            {
+                translateX: function() {
+                    return anime.random(minLong, maxLong);
+                },
+                  translateY: function() {
+                      return anime.random(minLat, maxLat);
+                },
+            },
+            {
+                translateX: function() {
+                    return anime.random((minLong-2), (maxLong+2));
+                  },
+                  translateY: function() {
+                      return anime.random((minLat-3), (maxLat+3));
+                    },
+            }
+        ],
+        
+        easing: 'easeInOutSine',
+        duration: time,
+        loop: true,
+        elasticity: 500,
+        direction: 'alternate',
+        delay: delay
+      });
+}

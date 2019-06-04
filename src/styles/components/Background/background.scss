@@ -1,0 +1,67 @@
+.container--background{
+    display: flex;
+    .background-decoration{
+        @include hexagon(100px, (lighten($white-col_pale, 1%)), (solid 2px (lighten($white-col_pale, 5%))));
+        margin: 2px;
+        box-shadow: 10px 10px 50px darken($white-col_pale,10%);
+    }
+}
+
+.container--background__bottom__right{
+    position: relative;
+    transform: translate(52px, 29px);
+}
+
+.container--background__bottom__left{
+    position: relative;
+    transform: translate(0px, 58px);
+}
+
+.background-decoration_2{
+    //transform: scale(1.2);
+    z-index: 100;
+    box-shadow: 10px 10px 50px darken($white-col_pale,20%);
+}
+
+.container-group--background__2{
+    transform: translate(52px, 87px);
+}
+
+.container-global--background{
+    position: absolute;
+    left: -50px;
+    top: 100px;
+    transform: scale(0.5);
+}
+
+.container-group--background__3{
+    position: absolute;
+    left: 260px;
+    top: 272px;
+}
+
+.container-group--background__4{
+    position: absolute;
+    left: 104px;
+    top: 544px;
+}
+
+.container-group--background__5{
+    position: absolute;
+    left: 404px;
+    top: 504px;
+    transform: rotate(60deg);
+
+    .background-decoration{
+        //transform: scale(1.2);
+        z-index: 100;
+        box-shadow: 10px 10px 50px darken($white-col_pale,15%);
+    }
+
+    .background-decoration_2{
+        //transform: scale(1.2);
+        z-index: 100;
+        box-shadow: 10px 10px 50px darken($white-col_pale,20%);
+    }
+
+}

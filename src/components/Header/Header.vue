@@ -24,7 +24,6 @@
 <script>
 
 import Carousel from "@/components/Carousel/Carousel.vue"
-import ContentTeaser from "@/components/Header/ContentTeaser.vue"
 import SubTitle from "@/components/Header/SubTitle.vue"
 import ScrollArrow from "@/components/Buttons/ScrollArrow.vue"
 

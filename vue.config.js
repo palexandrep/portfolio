@@ -6,22 +6,25 @@ module.exports = {
     'style-resources-loader': {
       preProcessor: 'scss',
       'patterns': [path.resolve(__dirname, "./src/styles/styles.scss")]
+    },
+    configureWebpack: {
+      module: {
+        rules: [
+          {
+            test: /\.(pdf)(\?.*)?$/,
+            use: [
+              {
+                loader: 'url-loader',
+                options: {
+                  name: 'files/[name].[hash:8].[ext]'
+                }
+              }
+            ]
+          }
+        ]
+      }
     }
-  },/*
-  chainWebpack: config => {
-    config.module
-      .rule('file-loader')
-      .test(/\.(pdf)$/)
-      .use('file-loader')
-      .tap(options => {
-       // name: '[name].[ext]', 
-       // outputPath: './assets/img/'
-        return options
-      })
-      config.module
-      .rule('vue')
-      .use('vue-loader')
-  }*/
+  }
 }
 
 

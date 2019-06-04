@@ -5,7 +5,7 @@ import store from './store'
 import vueSmoothScroll from 'vue2-smooth-scroll'
 import {LazyLoadDirective} from "@/assets/js/javaScript.js";
 import VueMq from 'vue-mq'
-
+import 'swiper/dist/css/swiper.css'
 
 Vue.use(vueSmoothScroll);
 Vue.use(VueMq, {

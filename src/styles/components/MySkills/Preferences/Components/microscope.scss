@@ -1,6 +1,28 @@
-.container-microscope{
-    background-color: $white-col_pale;
-    width: 200px;
-    height: 200px;
-    border-radius: 100%;
+
+.sub-container-microscope{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.container--preference-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $white-col;
+}
+
+.preference-text{
+    border-radius: 40px;
+    background-color: $mid-col;
+    padding: 1px 14px;
+    z-index: 10;
+}
+
+#microscope-illustration{
+    fill: $white-col_pale;
+    stroke: none;
 }

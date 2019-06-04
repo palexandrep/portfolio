@@ -10,7 +10,7 @@
          url("assets/fonts/Poiret_One/PoiretOne-Regular.ttf") format("ttf");
 }
 
-.title__header, .text__header, .menu--item{
+.title__header, .text__header, .menu--item, .title__button{
     text-transform: uppercase;
 }
 
@@ -33,11 +33,11 @@
 }
 
 .text__normal{
-    font-size: 22px;
+    font-size: 18px;
 }
 
 .text__small{
-    font-size: 19px;
+    font-size: 16px;
 }
 
 .text__tiny{
@@ -56,4 +56,8 @@
 
 .title__mid-color, .text__mid-color{
     color: $mid-col;
+}
+
+.title__bgc-color, .text__bgc-color{
+    color: $bgc-col;
 }

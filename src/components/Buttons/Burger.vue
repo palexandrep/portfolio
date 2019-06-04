@@ -1,5 +1,5 @@
 <template>
-    <button v-on:click="toggleMenu()" class="btn-burger shadow-version">
+    <button v-on:click="toggleMenu()" class="btn-burger">
       <span class="burger">
         <span class="burger__line burger__line--top"></span>
         <span class="burger__line burger__line--center"></span>

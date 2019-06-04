@@ -39,7 +39,7 @@
         <span class="experiences-separation experiences-separation__bottom"></span>
       </span>
     </li>
-    <li class="container--img-experience grid-x">
+    <li class="container--img-experience container--img-experience__conclusion grid-x">
       <img class="group--img-experience cell center" :src='chemicalReaction' alt="chemicals reaction">
     </li>
   </ul>
@@ -55,11 +55,9 @@ export default {
   components:{
     Post
   },
-
   data: function(){
     return{
       chemicalReaction: require("@/assets/img/chemical_reaction.svg"),
-
     }
   },
   computed:{
@@ -73,9 +71,6 @@ export default {
   methods:{
     objLength: function(obj){
       return Object.keys(obj).length
-    },
-    ok: function(zz){
-      console.log(zz)
     }
   }
 }

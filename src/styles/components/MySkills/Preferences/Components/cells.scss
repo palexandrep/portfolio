@@ -3,4 +3,17 @@
     height: 16px;
     width: 40px;
     border-radius: 40px;
+    opacity: 0.3;
+    position: absolute;
+    animation-name: movingcells;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+.container-microscope-cell{
+    position: absolute;
+    overflow: visible;
 }

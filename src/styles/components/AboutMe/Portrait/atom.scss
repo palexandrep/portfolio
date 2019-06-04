@@ -1,13 +1,11 @@
 .atom--elipse{
-  fill:none;
+  fill: none;
   stroke: $mid-col;
   stroke-width: $stroke-width;
-  stroke-miterlimit:10;
+  stroke-miterlimit: 6;
 }
   
 .atom--circle{
-  width: 10px;
-  height: 10px;
   fill: $mid-col;
 }
 

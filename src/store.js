@@ -38,47 +38,55 @@ const contentTeaser = {
 //---- Content Exhibitions
 
 const contentExhibitions = {
+  illustration:{
+    url: require('@/assets/img/satellite.svg'),
+    alt: 'satellite'
+  },
   images:{
-    img1:{
-      url: require('@/assets/img/koma_pics/pic1.jpg'),
-      alt: "exhibition_picture_1"
+    firstGallery:{
+      img2:{
+        url: require('@/assets/img/koma_pics/pic2.jpg'),
+        alt: "exhibition_picture_2"
+      },
+      img3:{
+        url: require('@/assets/img/koma_pics/pic3.jpg'),
+        alt: "exhibition_picture_3"
+      },
+      img6:{
+        url: require('@/assets/img/koma_pics/pic6.jpg'),
+        alt: "exhibition_picture_6"
+      },
+      img7:{
+        url: require('@/assets/img/koma_pics/pic7.jpg'),
+        alt: "exhibition_picture_7"
+      },
+      img8:{
+        url: require('@/assets/img/koma_pics/pic8.jpg'),
+        alt: "exhibition_picture_8"
+      },
+      img10:{
+        url: require('@/assets/img/koma_pics/pic10.jpg'),
+        alt: "exhibition_picture_10"
+      }
     },
-    img2:{
-      url: require('@/assets/img/koma_pics/pic2.jpg'),
-      alt: "exhibition_picture_2"
-    },
-    img3:{
-      url: require('@/assets/img/koma_pics/pic3.jpg'),
-      alt: "exhibition_picture_3"
-    },
-    img4:{
-      url: require('@/assets/img/koma_pics/pic4.jpg'),
-      alt: "exhibition_picture_4"
-    },
-    img5:{
-      url: require('@/assets/img/koma_pics/pic5.jpg'),
-      alt: "exhibition_picture_5"
-    },
-    img6:{
-      url: require('@/assets/img/koma_pics/pic6.jpg'),
-      alt: "exhibition_picture_6"
-    },
-    img7:{
-      url: require('@/assets/img/koma_pics/pic7.jpg'),
-      alt: "exhibition_picture_7"
-    },
-    img8:{
-      url: require('@/assets/img/koma_pics/pic8.jpg'),
-      alt: "exhibition_picture_8"
-    },
-    img9:{
-      url: require('@/assets/img/koma_pics/pic9.jpg'),
-      alt: "exhibition_picture_9"
-    },
-    img10:{
-      url: require('@/assets/img/koma_pics/pic10.jpg'),
-      alt: "exhibition_picture_10"
-    },
+    secondGallery:{
+      img1:{
+        url: require('@/assets/img/koma_pics/pic1.jpg'),
+        alt: "exhibition_picture_1"
+      },
+      img4:{
+        url: require('@/assets/img/koma_pics/pic4.jpg'),
+        alt: "exhibition_picture_4"
+      },
+      img5:{
+        url: require('@/assets/img/koma_pics/pic5.jpg'),
+        alt: "exhibition_picture_5"
+      },
+      img9:{
+        url: require('@/assets/img/koma_pics/pic9.jpg'),
+        alt: "exhibition_picture_9"
+      }
+    }
   }
 }
 
@@ -283,7 +291,7 @@ const switchBtnsVal = {
   switchs:{
     preferences:{
       btn1: {
-        text: "integration",
+        text: "design",
         value: 1
       },
       btn2: {
@@ -291,18 +299,25 @@ const switchBtnsVal = {
         value: 2
       },
       btn3: {
-        text: "design",
+        text: "integration",
         value: 3
       }
     }
   }
 }
 
+//--------------------- DNA length
+
+const dnaMediaQueries = {
+  mediaSmall: true
+}
+
 //------------------------------------------------------------------------ Getters
 
 let getters = {
   getMyState: state => state.menu.menuActif,
-  getMyStateSection: state => state.sections
+  getMyStateSection: state => state.sections,
+  getMyStateDna: state => state.dnaMediaQueries
 }
 
 //------------------------------------------------------------------------ Mutations
@@ -328,6 +343,9 @@ const mutations = {
   },
   contact: (state) => {
     state.sections.contact.closed = !state.sections.contact.closed
+  },
+  Media: (state,value) => {
+    state.dnaMediaQueries.mediaSmall = value
   }
 } 
 
@@ -342,7 +360,8 @@ export default new Vuex.Store({
     contentTeaser,
     contentExhibitions,
     switchBtnsVal,
-    experiences
+    experiences,
+    dnaMediaQueries
   },
   mutations: mutations,
   getters: getters,

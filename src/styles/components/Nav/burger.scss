@@ -8,8 +8,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
     margin: $padding__big;
     border-radius: 100%;
     background: $bgc-col_pale;
@@ -34,7 +34,7 @@
   position: absolute;
   left: 0;
   width: 100%;
-  height: 2px;
+  height: $border;
   background: $white-col_pale;
   //border-radius: $border;
 }

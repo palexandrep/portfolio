@@ -62,26 +62,24 @@ export default {
         self.$store.commit(sectionShortHandName)
         if(sectionShortHandStoreClosed === false){
           self.sectionAnchor = sectionShortHandStoreAnchor
-          const sectionHeight = sectionItem.offsetHeight
-          sectionHeightData = sectionHeight
-          //console.log(sectionHeightData)
+          selfsectionHeight.about = sectionItem.offsetHeight
+          console.log(self.sectionHeight.about)
           lockerHead.classList.add('locker__closed')
           hideSection(containerSection, 0)
         }    
         else{
           console.log('ouverture')
-          //console.log(sectionHeightData)
+          console.log(sectionHeightData)
           lockerHead.classList.remove('locker__closed')
           hideSection(containerSection, sectionHeightData)
         }
-        const hello = self.sectionHeight.about
-      //console.log(hello)
       }
       
       if(thisLocker.classList.contains('locker-about')){
         const sectionItem = document.querySelector('.container--about-me--content'),
               lockerHead = document.querySelector('.locker-about .locker__head')
-        //console.log(sectionHeight)
+              //this.sectionHeight.about = sectionItem.offsetHeight
+        //console.log(sectionItem.offsetHeight)
         toggleSection('.container--about-me--content', 'about', Sections.about.closed, Sections.about.anchor, sectionItem, self.sectionHeight.about, lockerHead)
       }
       else if(thisLocker.classList.contains('locker-skills')){

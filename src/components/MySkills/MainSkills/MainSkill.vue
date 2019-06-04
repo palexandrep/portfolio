@@ -1,20 +1,24 @@
 <template>
-        <ul class="container-list-main-skills grid-x grid-margin-x" v-if="bottom !== true">
-            <li class="item-main-skills item-main-skills__top text-main-skills cell small-4" v-bind:key="skill" v-for="skill in skills">
-                <span class="main-skills-decoration"></span>
-                <span class="container--title-main-skills container--title-main-skills__top">
-                    <h4 class="title-main-skills title-main-skills__top title title__mid-color">{{skill}}</h4>
-                </span>
-            </li>
-        </ul>
-        <ul class="container-list-main-skills grid-x grid-margin-x" v-else>
-            <li class="item-main-skills item-main-skills__bottom text-main-skills cell small-6" v-bind:key="skill" v-for="skill in skillsFiltered">
-                <span class="container--title-main-skills container--title-main-skills__bottom">
-                    <h4 class="title-main-skills title-main-skills__bottom title title__mid-color">{{skill}}</h4>
-                </span>
-                <span class="main-skills-decoration"></span>
-            </li>
-        </ul>
+        <span class="container-list-main-skills" v-if="bottom !== true">
+            <ul class="sub-container-list-main-skills sub-container-list-main-skills__top">
+                <li class="item-main-skills item-main-skills__top text-main-skills" v-bind:key="skill" v-for="skill in skills">
+                    <span class="main-skills-decoration main-skills-decoration__top"></span>
+                    <span class="container--title-main-skills container--title-main-skills__top">
+                        <h4 class="title-main-skills title-main-skills__top title title__mid-color">{{skill}}</h4>
+                    </span>
+                </li>
+            </ul>
+        </span>
+        <span class="container-list-main-skills" v-else>
+            <ul class="sub-container-list-main-skills sub-container-list-main-skills__bottom">
+                <li class="item-main-skills item-main-skills__bottom text-main-skills" v-bind:key="skill" v-for="skill in skillsFiltered">
+                    <span class="container--title-main-skills container--title-main-skills__bottom">
+                        <h4 class="title-main-skills title-main-skills__bottom title title__mid-color">{{skill}}</h4>
+                    </span>
+                    <span class="main-skills-decoration main-skills-decoration__bottom"></span>
+                </li>
+            </ul>
+        </span>
 </template>
 
 <script>

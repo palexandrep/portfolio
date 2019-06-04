@@ -3,7 +3,7 @@
     <SectionHeader id="my-work" :lockerClassName="lockerClass" :sectionTitle="title"></SectionHeader>
     <span class="container-section-content container--work--content">
       <Samples />
-      <Exhibitions/>
+      <MyUniverse/>
     </span>
   </div>
 </template>
@@ -12,14 +12,14 @@
 
 import SectionHeader from '@/components/SectionHeader/SectionHeader.vue'
 import Samples from '@/components/MyWork/Components/Samples.vue'
-import Exhibitions from '@/components/MyWork/Components/Exhibitions.vue'
+import MyUniverse from '@/components/MyWork/Components/MyUniverse.vue'
 
 export default {
   name: 'MyWork',
   components:{
     SectionHeader,
     Samples,
-    Exhibitions
+    MyUniverse
   },
   data: function(){
     return{

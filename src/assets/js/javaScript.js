@@ -16,8 +16,10 @@ export function toggleMenu(){
       item.classList.add('square__opacity')
     })
     //-- slide + rolling
+    // el, activeSection
     animateSquareMenu('.square','.menu--item:nth(1) square')
-    slideMenu('.container-menu__mobile', 500, -80,50)
+    //  el, time, translate, elasticity
+    slideMenu('.container-menu__mobile', 500, -80, 20)
     burger.classList.add('btn-burger__actif');
     //----------- change store status
     this.$store.commit('MenuActif')
@@ -35,6 +37,7 @@ export function toggleMenu(){
         item.classList.remove('square__opacity')
       })
       //-- slide
+      //  el, time, translate, elasticity
       slideMenu('.container-menu__mobile', 1000, 100,100)
       burger.classList.remove('btn-burger__actif');
       //----------- change store status
@@ -59,6 +62,7 @@ export function toggleMenu(){
     return
   }
 }*/
+//-------------------------Lazyloading
 
 export function LazyLoadDirective(){
   inserted: el => {
@@ -100,3 +104,29 @@ export function LazyLoadDirective(){
     }
   }
 }
+
+//----------------- get random num
+
+export function randomNum(iteration, max, min, allowNegative){
+  const numList = [];
+  if(allowNegative === true){
+    for (let i = 0; i < iteration; i++){
+      const randomBool = Math.random() >= 0.5;
+      if(randomBool === false){
+        numList.push(-Math.floor(Math.random() * Math.floor(max - min +1))+min)
+      }
+      else{
+        numList.push(Math.floor(Math.random() * Math.floor(max - min +1))+min)
+      }
+    }
+  }
+  if(allowNegative === false){
+    for (let i = 0; i < iteration; i++){
+      numList.push(Math.floor(Math.random() * Math.floor(max - min +1))+min)
+    }
+  }
+  return numList
+}
+
+//------------------ stop scroll
+

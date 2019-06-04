@@ -2,42 +2,27 @@
     <span>
         <SubSectionTitle :title='titleSubSection' />
         <div class="container-preferences container--sub-section">
-            <Microscope/>
-            <span class="container-btn__switch">
-                <SwitchBtns v-bind:key="btn.text" v-for="btn in switchBtnsVal.switchs.preferences" :switchValue="btn.value" />
-            </span>
+            <SwiperCarousel :content="carouselComponent"/>
         </div>
     </span>
 </template>
 
 <script>
 
-import SwitchBtns from "@/components/Buttons/SwitchBtns.vue"
-import Microscope from "@/components/MySkills/Preferences/Components/Microscope.vue"
 import SubSectionTitle from "@/components/SectionHeader/SubSection/SubSectionTitle.vue"
-import {mapGetters} from "vuex"
+import SwiperCarousel from "@/components/Carousel/SwiperCarousel.vue"
 
 export default {
     name: 'Preferences',
     components:{
-        SwitchBtns,
-        Microscope,
-        SubSectionTitle
+        SubSectionTitle,
+        SwiperCarousel
     },
     data:function(){
         return{
-            titleSubSection: 'PREFERENCES'
-        }
-    },
-    computed:{
-        ...mapGetters({
-            myState: 'getMyState'
-        }),
-
-        switchBtnsVal(){
-            return this.$store.state.switchBtnsVal
+            titleSubSection: 'PREFERENCES',
+            carouselComponent: "ContentPreferences"
         }
     }
 }
 </script>
-

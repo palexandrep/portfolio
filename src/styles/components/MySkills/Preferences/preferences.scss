@@ -1,10 +1,13 @@
 @import "@/styles/components/MySkills/Preferences/Components/microscope.scss";
 @import "@/styles/components/MySkills/Preferences/Components/cells.scss";
-@import "@/styles/components/MySkills/Preferences/Components/preferencesText.scss";
 
 .container-preferences{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.carousel-illustration{
+    width: 100px;
 }

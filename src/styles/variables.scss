@@ -4,6 +4,7 @@ $bgc-col: #0B0F1D;
 $bgc-col_pale: #1A1D28;
 $bgc-col_pale-opacity: rgba(26,29,40,0.2);
 $bgc-col_pale-gradient: linear-gradient(to right, rgba(26,29,40,0) 0%,rgba(26,29,40,1) 30%,rgba(26,29,40,1) 70%,rgba(26,29,40,0) 100%);
+$bgc-col_pale-gradient__to-right: rgb(3, 8, 24);
 $mid-col: #D24116;
 $white-col: #FFFFFF;
 $white-col_pale: #D8D8D8;
@@ -14,11 +15,18 @@ $padding__small: 5px;
 $padding__big: 15px;
 $padding__extra-big: 30px;
 $padding__sub-section: 10vh;
+$padding__section: 15vh;
 
 // borders
 
-$border: 2px;
-$stroke-width: 2px;
+$border: 1px;
+$stroke-width: 1px;
+$radius: 0px;
+
+//------ shadow
+
+$soft-shadow: 10px 10px 40px darken($white-col_pale,5%);
+$medium-shadow: 10px 10px 30px darken($white-col_pale,12%);
 
 //------- mixins
 
@@ -28,3 +36,57 @@ $stroke-width: 2px;
     grid-row-start: $rstart;
     grid-row-end: $rend;
   }
+
+@mixin hexagon($size, $color, $borders: 0) {
+    position: relative;
+    width: $size; 
+    height: ($size * 0.577);
+    background-color: $color;
+    margin: ($size * 0.288) 0;
+    border-left: $borders;
+    border-right: $borders;
+  
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      @if $borders == 0 {
+        width: 0;
+        left: 0;
+        border-left: ($size/2) solid transparent;
+        border-right: ($size/2) solid transparent;
+      } @else {
+        z-index: 1;
+        width: ($size * 0.707);
+        height: ($size * 0.707);
+        -webkit-transform: scaleY(0.5774) rotate(-45deg);
+        -ms-transform: scaleY(0.5774) rotate(-45deg);
+        transform: scaleY(0.5774) rotate(-45deg);
+        background-color: inherit;
+        left: ($size * 0.129);
+      }
+    }
+  
+    &:before {
+      @if $borders == 0 {
+        bottom: 100%;
+        border-bottom: ($size * 0.288) solid $color;
+      } @else {
+        top: -($size * 0.353);
+        border-top: $borders;
+        border-right: $borders;
+      }
+    }
+  
+    &:after {
+      @if $borders == 0 {
+        top: 100%;
+        width: 0;
+        border-top: ($size * 0.288) solid $color;
+      } @else {
+        bottom: -($size * 0.353);
+        border-bottom: $borders;
+        border-left: $borders;
+      }
+    }
+}

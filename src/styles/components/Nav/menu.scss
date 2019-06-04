@@ -5,7 +5,7 @@
     display: flex;
     justify-content: flex-end;
     position: fixed;
-    background-color: $bgc-col;
+    background: linear-gradient(0deg,$white-col_pale,darken($white-col_pale, 10%));
     z-index: 15;
 
     .menu--item{
@@ -15,10 +15,12 @@
 
 
 //---------------- Mobile
+
+
 .container--menu__mobile{
 
     .container-menu__mobile{
-        background-color: $white-col;
+        background: linear-gradient(90deg,$white-col_pale,$white-col);
         height: 100vh;
         width: 90%;
         position: fixed;
@@ -40,11 +42,13 @@
     }
     
     .square{
-        width: 28px;
-        height: 28px;
+        width: 20px;
+        height: 20px;
         background-color: $mid-col;
         float: left;
         margin-right: 30px;
+        //border: solid $border $bgc-col;
+        border-radius: $radius;
     }
 
     .square__opacity{

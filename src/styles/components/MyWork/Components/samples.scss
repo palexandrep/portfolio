@@ -1,10 +1,14 @@
+.container--samples-and-images{
+    padding-bottom: $padding__extra-big; 
+}
+
 .sample--body-sample{
-    border: 1px solid $mid-col;
+    border: $border solid $mid-col;
     border-top: none;
     height: 250px;
     width: 44px;
     border-radius: 0 0 30px 30px;
-    background-color: $bgc-col_pale;
+    background-color: $white-col;
 }
 
 .sample--plug-sample{
@@ -12,20 +16,20 @@
 }
 
 .sample--plug-sample{
-    transform: translateY(15px) translateX(2px);
+    transform: translateY($padding__big) translateX(2px);
 }
 
-#sample1 .text-sample-container--text-sample { 
+#sample-github {
     animation-delay: 2s;
 }
 
-#sample3 .text-sample-container--text-sample { 
+#sample-codepen { 
     animation-delay: 4s;
 }
 
 .text-sample-container--text-sample{
+    margin: 70px 0;
     padding-bottom: 7px;
-
     animation-name: floatText;
     animation-duration: 12s;
     animation-iteration-count: infinite;
@@ -57,21 +61,27 @@
 .body-sample--empty-space-sample{
     height: 20%;
     width: 100%;
-    background-color: $bgc-col;
+    background-color: $white-col_pale;
 }
 
 .container--samples li{
-    align-items: flex-end;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container--samples-and-images:nth-child(even) .container-sample{
+    order: 3;
+}
+
+.container--samples-and-images:nth-child(even) .container-sample-decoration{
+    order: 2;
+    transform: rotate(180deg);
 }
 
 .container--img__sample{
-  display: inline-block;
-  vertical-align: top;
-  padding: 10px;
-  width: 230px;
-  height: 230px;
-  margin-right: .5em;
-  margin-bottom: .3em;
+  width: 200px;
+  height: 200px;
+  margin-top: $padding__big;
 }
 
 .sub-container--img__sample{
@@ -85,11 +95,25 @@
     display: block;
     min-width: 100%;
     min-height: 100%;
-    margin: auto;
-    position: absolute;
-    top: -100%;
-    right: -100%;
-    bottom: -100%;
-    left: -100%;
+    border-radius: 100%
 }
 
+.sample-decoration__left{
+    border: solid $border $white-col_pale;
+    width: 10px;
+    height: 1px;
+}
+
+.sample-decoration__right{
+    width:10px;
+    height: 200px;
+    border: solid $border $white-col_pale;
+    border-right: none;
+    border-radius: 3px 0 0 3px;
+}
+
+.container-sample-decoration{
+    display: flex;
+    align-items: center;
+    margin-top: $padding__big;
+}

@@ -1,7 +1,7 @@
 <template>
     <div class="box-item--experience post cell">
-        <h5 class="title text title__exp text__normal">{{postTitle}}</h5>
-        <p class="text title__exp text__small text__mid-color">{{postText}}</p>
+        <h5 class="title  title__exp text__normal">{{postTitle}}</h5>
+        <p class="text title__exp text__small text__bgc-color">{{postText}}</p>
     </div>
 </template>
 

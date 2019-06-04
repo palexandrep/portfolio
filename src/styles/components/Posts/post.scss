@@ -1,4 +1,14 @@
 .post{
-    background: $bgc-col_pale-opacity;
+    background: $white-col_pale;
+    $background__light: lighten($bgc-col, 2%);
+    background: desaturate($background__light, 10%);
     padding: 30px;
+    border-radius: $radius;
+    .title{
+        color: $mid-col !important;
+    }
+    .text{
+        color: $white-col;
+    }
 }
+// need to fix this!

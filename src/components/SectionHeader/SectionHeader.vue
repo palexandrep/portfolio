@@ -1,6 +1,6 @@
 <template>
   <div class="container-section-title">
-    <Locker class="" :sectionName='lockerClassName'/>
+    <!--<Locker class="" :sectionName='lockerClassName'/>-->
     <span class="box-section-title">
       <h3 class="title section-title title__big">{{sectionTitle}}</h3>
     </span>

@@ -50,7 +50,7 @@ export default {
   methods:{
     CloseMenu: function(){ 
       const burger = document.querySelector('.btn-burger');
-        slideMenu('.container-menu__mobile', 500, 100,100)
+        slideMenu('.container-menu__mobile', 500, 100,10)
         burger.classList.remove('btn-burger__actif');
         this.$store.commit('MenuActif')
     },

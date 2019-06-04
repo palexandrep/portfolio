@@ -1,7 +1,7 @@
 <template>
   <div @mouseover="animateGrow" @mouseleave="animateShrink" class="container--portrait">
     <atom class="atom"/>
-    <img class="portrait-img" src="@/assets/portrait.jpg" alt="Alexandre Piette">
+    <img class="portrait-img" src="@/assets/portrait3.jpg" alt="Alexandre Piette">
   </div>
 </template>
 
@@ -17,11 +17,13 @@ export default {
     atom
   },
   methods:{
+
+    //---- el, time, scale, elasticity
     animateGrow: function(){
-      growItem('.portrait-img', 900, 2.2, 100)
+      growItem('.portrait-img', 900, 1.3, 1000)
     },
     animateShrink: function(){
-      growItem('.portrait-img', 700, 1, 500)
+      growItem('.portrait-img', 700, 1, 1000)
     },
   }
 }

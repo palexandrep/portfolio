@@ -4,7 +4,7 @@
         <div class="container--sub-section">
             <MainSkill/>
             <DNA class="item-main-skills text-main-skills"/>
-            <MainSkill :bottom={check} />
+            <MainSkill :bottom='{check}'/>
         </div>
     </div>
 </template>

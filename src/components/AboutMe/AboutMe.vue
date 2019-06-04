@@ -6,6 +6,7 @@
       <Portrait/>
       <PresentationText/>
       <Button :btnTitle="btnText"/>
+      <!--<Background/>-->
     </span>
   </div>
 </template>
@@ -18,6 +19,7 @@ import Portrait from '@/components/AboutMe/Portrait/Portrait.vue'
 import PresentationText from '@/components/AboutMe/PresentationText.vue'
 import Button from '@/components/Buttons/Button.vue'
 import { mapGetters } from 'vuex'
+import Background from "@/components/Background/Background.vue"
 
 export default {
     name: 'AboutMe',
@@ -26,7 +28,8 @@ export default {
         SubSectionTitle,
         Portrait,
         PresentationText,
-        Button
+        Button,
+        Background
     },
     data: function(){
       return{

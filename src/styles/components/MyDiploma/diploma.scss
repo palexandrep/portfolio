@@ -1,5 +1,6 @@
 .icon__degree{
     max-height: 50px;
+    margin: $padding__big;
 }
 
 .icon__degree:nth-child(1){
@@ -12,8 +13,8 @@
 
 .separation-bar__diploma{
     width: 2px;
-    background-color: $white-col_pale;
-    height: 100%;
+    background-color: $white-col;
+    height: 80%;
     align-self: center;
     grid-column-gap: 15px;
 }
@@ -63,6 +64,7 @@
 
     .container--diploma-text{
         padding: $padding__big;
+        margin: $padding__small;
         grid-column-gap: 15px;
         grid-row-gap: 15px;
     }

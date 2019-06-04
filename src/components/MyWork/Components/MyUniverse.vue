@@ -1,27 +1,26 @@
 <template>
-    <span>
+    <span class="global-container-exhibitions">
         <SubSectionTitle :title="title"/>
-        <Carousel :content="carouselComponent"/>
+        <SwiperCarousel :content="carouselComponent"/>
     </span>
 </template>
 
 <script>
 
-import Carousel from "@/components/Carousel/Carousel.vue"
+import SwiperCarousel from "@/components/Carousel/SwiperCarousel.vue"
 import SubSectionTitle from "@/components/SectionHeader/SubSection/SubSectionTitle.vue" 
 
 export default {
-    name: "Exhibitions",
+    name: "MyUniverse",
     components:{
         SubSectionTitle,
-        Carousel
+        SwiperCarousel
     },
     data:function(){
         return{
             carouselComponent: "ContentExhibitions",
-            title: "exhibitions"
+            title: "My universe"
         }
     }
-
 }
 </script>

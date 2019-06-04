@@ -21,7 +21,7 @@ export default {
                 master:{
                     id: "master",
                     title: "Master degree",
-                    text: "in plastic arts. (ESAPV of Mons with dinstinction)",
+                    text: "in plastic arts. (ESAPV of Mons)",
                     date: "2012 bc",
                     img: require("@/assets/img/monkey.svg")
                 },

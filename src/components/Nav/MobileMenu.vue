@@ -19,7 +19,7 @@
 
 import anime from 'animejs'
 import { toggleMenu } from '@/assets/js/javaScript.js'
-import Burger from '@/components/Nav/Burger.vue'
+import Burger from '@/components/Buttons/Burger.vue'
 import { mapGetters } from 'vuex'
 
 export default {
@@ -46,6 +46,7 @@ export default {
     }
   },
   mounted: function(){
+    // call from assets/js
     this.toggleMenu = toggleMenu
   }
 }
