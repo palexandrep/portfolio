@@ -10,10 +10,10 @@
                     </span>           
                 </swiperSlide>
         </swiper>
-        <span class="container-btn__switch">
+        <!--<span class="container-btn__switch">
             <div class="swiper-pagination swiper-pagination__preferences" slot="pagination"></div>
-            <!--<SwitchBtns class="swiper-pagination" v-bind:key="btn.text" v-for="btn in switchBtnsVal.switchs.preferences" :switchValue="btn.value" slot="pagination"  />-->
-        </span>
+            <SwitchBtns class="swiper-pagination" v-bind:key="btn.text" v-for="btn in switchBtnsVal.switchs.preferences" :switchValue="btn.value" slot="pagination"  />
+        </span>-->
     </div>
 </template>
 
@@ -46,7 +46,10 @@ export default {
                     el: '.swiper-pagination',
                     type: 'bullets',
                     clickable: true,
-                    hideOnClick: false
+                    hideOnClick: false,
+                    renderBullet: function (index, className) {
+                        return '<span class="' + className + '">' + (index + 1) + '</span>';
+                    }
                 }
             },
             preferences:{

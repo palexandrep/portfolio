@@ -1,7 +1,17 @@
 .presentation-text{
-    margin-bottom: 50px;
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 800px) {
+        margin-bottom: 30px;
+    }
 }
 
-.container--about-me{
+.container-portrait-and-presentation {
 
+    @media screen and (min-width: 800px) {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 100px 0;
+    }
 }

@@ -1,15 +1,25 @@
 <template>
-    <p class="presentation-text text text__bgc-color">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed perspiciatis id cum sequi tempore. Odio nostrum est necessitatibus nesciunt animi ut itaque repudiandae, praesentium modi dicta optio quisquam doloribus molestias quibusdam ipsam, alias minima rem placeat, tempore ad voluptas. Similique, vel iure beatae libero assumenda sed ullam fugit accusamus doloremque.
-    </p>
+    <div>
+        <p v-bind:key="paragraph.id" v-for="paragraph in myParagraphs.paragraphs" class="presentation-text text text__bgc-color">
+            {{paragraph}}
+        </p>
+    </div>
 </template>
 
 <script>
 
+import { mapGetters } from "vuex"
 
 export default {
     name: 'PresentationText',
-
+  computed:{
+    ...mapGetters({
+      myState: 'getMystate'
+    }),
+    myParagraphs(){
+      return this.$store.state.presentation
+    }
+  }
 }
 
 </script>

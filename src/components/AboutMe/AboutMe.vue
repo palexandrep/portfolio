@@ -3,9 +3,11 @@
     <SectionHeader id="about-me" :lockerClassName="lockerClass" :sectionTitle="title"></SectionHeader>
     <span class=" container-section-content container--about-me--content">
       <SubSectionTitle :title="titleSubSection" />
-      <Portrait/>
-      <PresentationText/>
-      <Button :btnTitle="btnText"/>
+      <div class="container-portrait-and-presentation">
+        <Portrait/>
+        <PresentationText data-aos="fade"/>
+      </div>
+      <Button data-aos="flip-up" :btnTitle="btnText"/>
       <!--<Background/>-->
     </span>
   </div>

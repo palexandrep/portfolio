@@ -1,12 +1,12 @@
 <template>
     <div class="container--btn__call-to">
-        <div class="bubble-container bubble-container--top">
+        <!--<div class="bubble-container bubble-container--top">
             <BtnDecorations/>
-        </div>
-        <a href="mailto:piette.alexandre@gmail.com" class="btn btn__call-to title title__small shadow" @click="openLink()">{{btnTitle}}</a>
-        <div class="bubble-container bubble-container--bottom">
+        </div>-->
+        <a href="mailto:piette.alexandre@gmail.com" class="btn btn__call-to title title__small shadow">{{btnTitle}}</a>
+        <!--<div class="bubble-container bubble-container--bottom">
             <BtnDecorations/>
-        </div>
+        </div>-->
     </div>
 </template>
 
@@ -15,13 +15,13 @@
 import anime from 'animejs'
 import {animateBtn} from '@/assets/js/animeFunctions'
 import {btnDecorationAnimate} from '@/assets/js/animeFunctions'
-import BtnDecorations from '@/components/Buttons/Decoration/BtnDecorations.vue'
+//import BtnDecorations from '@/components/Buttons/Decoration/BtnDecorations.vue'
 import cvalexandrepiette from '@/assets/img/background/bgd1.jpg'
 
 export default {
     name: 'Button',
     components:{
-        BtnDecorations
+        //BtnDecorations
     },
     data:function(){
         return{

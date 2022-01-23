@@ -1,5 +1,10 @@
 .container-my-universe{
-    padding: $padding__sub-section 0;
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width: 800px) {
+        width: 40%;
+        margin-left: 45%;
+    }
 }
 
 .container-my-universe--circle-border{
@@ -7,13 +12,55 @@
     width: 280px;
     height: 280px;
     border-radius: 100%;
-    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    align-self: flex-start;
+    background: $bgc-col;
+    position: relative;
+    z-index: 3;
+}
+
+.container-my-universe--no-border{    
+    align-self: flex-end;
 }
 
 .swiper-exhibitions--decoration{
-    width: 60px;
+    width: 40px;
+    opacity: .7;
+    animation-name: animSatelite;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
 }
 
+@keyframes animSatelite{
+    0%{
+        transform: rotate(0deg)
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.global-container-exhibitions {
+position: relative;
+overflow: hidden;
+}
+
+.my-work__decoration-orbital {
+    border: solid 1px $white-col_pale;
+    width:700px;
+    height: 700px;
+    border-radius: 100%;
+    position: absolute;
+    top: 100px;
+    right: 105px;
+
+    @media screen and (min-width: 800px) {
+        width: 1200px;
+        height: 800px;
+        right: 25%;
+        top: 125px;
+    }
+}

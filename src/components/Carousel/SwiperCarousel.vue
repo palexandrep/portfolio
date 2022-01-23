@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="my-swiper-carousel">
         <ContentPreferences v-if="content=='ContentPreferences'"/>
         <ContentExhibitions v-if="content=='ContentExhibitions'"/>
     </div>

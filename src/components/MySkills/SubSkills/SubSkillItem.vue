@@ -1,7 +1,7 @@
 <template>
     <span class="center">
         <ul class="container--sub-skill-list grid-x grid-margin-x grid-margin-y">
-            <li v-for="item in items" v-bind:key="item.id" v-bind:class="{ empty: item.isEmpty }" class="container--sub-skill-item container--sub-skill-item__full cell small-4">
+            <li data-aos="flip-up" v-for="item in items" v-bind:key="item.id" v-bind:class="{ empty: item.isEmpty }" class="container--sub-skill-item container--sub-skill-item__full cell small-4">
                 <h5 class="title title__white title__sub-skill">{{item.title}}</h5>
                 <p class="sub-skill-item-type text__mid-color text__tiny">{{item.type}}</p>
             </li>
@@ -40,6 +40,10 @@ export default {
                 },
                 {
                     title: 'react',
+                    type: '2'
+                },
+                {
+                    title: 'angular',
                     type: '2'
                 },
                 {

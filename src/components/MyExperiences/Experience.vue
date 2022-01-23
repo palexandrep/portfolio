@@ -35,6 +35,7 @@
       </div>
 
       <span class="container-experiences-separation">
+        <div class="experiences-separation__circle"></div>
         <span class="experiences-separation experiences-separation__top"></span>
         <span class="experiences-separation experiences-separation__bottom"></span>
       </span>

@@ -37,7 +37,7 @@ export default {
     MyExperiences,
     MyDiploma,
     MyWork,
-    Contact
+    Contact,
   },
   computed:{
     menuActif(){

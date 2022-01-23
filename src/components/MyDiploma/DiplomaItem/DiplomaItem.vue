@@ -4,7 +4,7 @@
             <span class="container--diploma-item separation-bar separation-bar__diploma"></span>
             <span class="container--diploma-item separation-bar separation-bar__diploma"></span>
             <span class="container--diploma-item separation-bar separation-bar__diploma"></span>
-            <div v-bind:key="degree.id+'text'" v-for="degree in degrees" class="container--diploma-item container--diploma-text post">
+            <div v-bind:key="degree.id+'text'" v-for="degree in degrees" class="container--diploma-item container--diploma-text post post--white">
                 <h4 class="title title__small title text__normal">{{degree.title}}</h4>
                 <p class="diploma-description text text__normal text__mid-color">{{degree.text}}</p>
                 <p class="diploma-date text text__mid-color">{{degree.date}}</p>

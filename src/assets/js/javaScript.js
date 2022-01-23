@@ -109,20 +109,38 @@ export function LazyLoadDirective(){
 
 export function randomNum(iteration, max, min, allowNegative){
   const numList = [];
+  const getNum = function(isNegative){
+    if(isNegative === true){
+      return -Math.floor(Math.random() * Math.floor(max - min +1))+min;
+    }
+    else{
+      return Math.floor(Math.random() * Math.floor(max - min +1))+min;
+    } 
+  }
   if(allowNegative === true){
     for (let i = 0; i < iteration; i++){
       const randomBool = Math.random() >= 0.5;
       if(randomBool === false){
-        numList.push(-Math.floor(Math.random() * Math.floor(max - min +1))+min)
+        const newNum = getNum(true);
+        if(numList.includes(newNum) === false){
+          numList.push(newNum);
+        }
       }
       else{
-        numList.push(Math.floor(Math.random() * Math.floor(max - min +1))+min)
+        const newNum = getNum(false);
+        if(numList.includes(newNum) === false){
+          numList.push(newNum);
+        }
+
       }
     }
   }
   if(allowNegative === false){
     for (let i = 0; i < iteration; i++){
-      numList.push(Math.floor(Math.random() * Math.floor(max - min +1))+min)
+      const newNum = getNum(false);
+        if(numList.includes(newNum) === false){
+          numList.push(newNum);
+        }
     }
   }
   return numList

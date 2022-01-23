@@ -5,19 +5,19 @@
         <span>
           <div class="container--title__header">
             <p class="text__header text text__mid-color">{{mainTitle.presentation}}</p>
-            <h1 class="title__header text title__white">{{mainTitle.title}}</h1>
+            <h1 class="title__header text title__white main__title">{{mainTitle.title}}</h1>
           </div>
           <span class="container-header--content-and-subtitle">
             <div class="sub-container-header--content-and-subtitle grid-x">
-              <Carousel :content="carouselComponent" class="cell"/>
-              <SubTitle class="container-header--subtitle"/>
+              <Carousel :content="carouselComponent" data-aos="fade-left" class="cell"/>
+              <SubTitle data-aos="fade-right" class="container-header--subtitle"/>
             </div>
           </span>
         </span>
-        
         <ScrollArrow :btnDirection="bottomArrow" :scrollLocation="scrollLinkTarget" :arrowColor="scrollBottomColor"/>
       </span>
     </header>
+    <!--<Background/>-->
   </span>
 </template>
 
@@ -26,10 +26,12 @@
 import Carousel from "@/components/Carousel/Carousel.vue"
 import SubTitle from "@/components/Header/SubTitle.vue"
 import ScrollArrow from "@/components/Buttons/ScrollArrow.vue"
+import Background from "@/components/Background/Background.vue"
 
 export default {
   name: 'Header',
   components:{
+    Background,
     Carousel,
     SubTitle,
     ScrollArrow

@@ -1,9 +1,13 @@
 .contributor{
     text-align: center;
-    margin-top: $padding__sub-section;
 }
 
 .footer{
     background: $mid-col;
     padding: $padding__sub-section 0;
+
+    @media screen and (min-width: 800px){
+        padding: 30px 0;
+
+    }
 }

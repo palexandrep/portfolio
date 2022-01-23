@@ -6,7 +6,12 @@ module.exports = {
     'style-resources-loader': {
       preProcessor: 'scss',
       'patterns': [path.resolve(__dirname, "./src/styles/styles.scss")]
-    },
+    }
+  }
+}
+
+/*
+,
     configureWebpack: {
       module: {
         rules: [
@@ -24,7 +29,4 @@ module.exports = {
         ]
       }
     }
-  }
-}
-
-
+  }*/

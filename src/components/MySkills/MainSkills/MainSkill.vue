@@ -1,7 +1,7 @@
 <template>
         <span class="container-list-main-skills" v-if="bottom !== true">
             <ul class="sub-container-list-main-skills sub-container-list-main-skills__top">
-                <li class="item-main-skills item-main-skills__top text-main-skills" v-bind:key="skill" v-for="skill in skills">
+                <li data-aos="zoom-in" class="item-main-skills item-main-skills__top text-main-skills" v-bind:key="skill" v-for="skill in skills">
                     <span class="main-skills-decoration main-skills-decoration__top"></span>
                     <span class="container--title-main-skills container--title-main-skills__top">
                         <h4 class="title-main-skills title-main-skills__top title title__mid-color">{{skill}}</h4>

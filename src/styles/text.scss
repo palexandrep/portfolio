@@ -10,12 +10,24 @@
          url("assets/fonts/Poiret_One/PoiretOne-Regular.ttf") format("ttf");
 }
 
+@font-face {
+    font-family: "Roboto";
+    src: url("assets/fonts/Roboto/Roboto-Bold.ttf") format("ttf"),
+         url("assets/fonts/Roboto/Roboto-Medium.ttf") format("ttf"),
+         url("assets/fonts/Roboto/Roboto-Light.ttf") format("ttf");
+}
+
+.text{
+    font-family: "Roboto", sans-serif;
+    font-weight: lighter;
+}
+
 .title__header, .text__header, .menu--item, .title__button{
     text-transform: uppercase;
 }
 
-.text, .title__header, .text__header{
-    font-family: "Poiret One", sans-serif;
+.title__header, .text__header, .main__title{
+    font-family: "Poiret One", "Roboto", sans-serif;
 }
 
 .title{
@@ -30,6 +42,10 @@
 
 .title__big, .text__big{
     font-size: 28px;
+
+    @media screen and (min-width: 800px) {
+        font-size: 42px;
+    }
 }
 
 .text__normal{
@@ -48,6 +64,13 @@
 
 .title__white, .text__white{
     color: $white-col;
+    text-shadow: 0 0  20px darken($white-col_pale, 12%);
+}
+
+.container--about-me, .container--work, .menu, .container-preferences {
+    .title__white, .text__white{
+        text-shadow: none;
+    }
 }
 
 .title__pale{

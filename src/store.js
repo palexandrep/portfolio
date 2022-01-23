@@ -33,6 +33,13 @@ const contentTeaser = {
   subTitle: "Laboratory"
 }
 
+//---- Portfolio
+
+/*const portfolio = {
+  url: require('@/assets/alexandre_piette_portfolio.pdf'),
+  alt: "Alexandre Piette CV"
+}*/
+
 //------------------------------ My Work ------------------------
 
 //---- Content Exhibitions
@@ -104,21 +111,21 @@ const samples = {
       id: 'sample2',
       title: 'github',
       link: 'https://github.com/palexandrep',
-      iconUrl: require('@/assets/img/koma_pics/pic1.jpg'),
+      iconUrl: require('@/assets/img/links/img/github.jpg'),
       picture: require('@/assets/img/links/github.svg')
     },
     behance:{
       id: 'sample3',
       title: 'behance',
       link: 'https://www.behance.net/ALEXANDREPIETTE',
-      iconUrl: require('@/assets/img/koma_pics/pic1.jpg'),
+      iconUrl: require('@/assets/img/links/img/behance.jpg'),
       picture: require('@/assets/img/links/behance.svg')
     },
     codepen:{
       id: 'sample4',
       title: 'codepen',
       link: 'https://codepen.io/Smog/',
-      iconUrl: require('@/assets/img/koma_pics/pic1.jpg'),
+      iconUrl: require('@/assets/img/links/img/codepen.jpg'),
       picture: require('@/assets/img/links/codepen.svg')
     }
 }
@@ -176,6 +183,17 @@ const sections = {
   }
 }
 
+//---------------about me
+
+const presentation = {
+  paragraphs:[
+    "Passionate about the IT world, I am a UI/UX designer and a Front End developer.",
+    "Always fascinated by design and code, I decided to pursue a degree in web design first, followed by a degree in front-end development.",
+    "Since then, I am still committed to improving my knowledge in those IT fields and putting them into practice in my work.",
+    "My principal's interests are the creation of designs and high-fidelity wireframes, the reflection around how to make a better user experience with gamification, the integration of layouts via HTML and good SCSS methodology, CSS and SVG animations, and Javascript Frameworks."
+  ]
+}
+
 //---------------experiences
 
 const experiences = {
@@ -184,11 +202,17 @@ const experiences = {
       id: "learning",
       img: require("@/assets/img/learning.svg"),
       experiences:{
-        exp:{
+        exp1:{
           value: 1,
           id: "learn-exp1",
           textFat: "Learning",
           textSmall: "on my own"
+        },
+        exp2:{
+          value: 2,
+          id: "learn-exp2",
+          textFat: "Exploring",
+          textSmall: "Bass player"
         }
       }
     },
@@ -199,26 +223,68 @@ const experiences = {
         exp1:{
           value: 1,
           id: "design-exp1",
-          textFat: "UI and newsletters",
-          textSmall: "integration for YAKimmo"
+          textFat: "UI/UX Design",
+          textSmall: "At Bridgestone"
         },
         exp2:{
           value: 2,
           id: "design-exp2",
-          textFat: "UI and UX",
-          textSmall: "for 'La Rondinella' website"
+          textFat: "UI/UX Design",
+          textSmall: "At Shiftmeapp"
         },
         exp3:{
           value: 3,
           id: "design-exp3",
-          textFat: "Playzone",
-          textSmall: "participation in UI, UX and integration ( 2017 edition )"
+          textFat: "UI and newsletters",
+          textSmall: "integration for YAKimmo"
         },
         exp4:{
           value: 4,
           id: "design-exp4",
+          textFat: "UI and UX",
+          textSmall: "for 'La Rondinella' website"
+        },
+        exp5:{
+          value: 5,
+          id: "design-exp5",
+          textFat: "Playzone",
+          textSmall: "participation in UI, UX and integration ( 2017 edition )"
+        },
+        exp6:{
+          value: 6,
+          id: "design-exp6",
           textFat: "Web Design",
           textSmall: "internship in Tacite"
+        }
+      }
+    },
+    coding:{
+      id: "coding",
+      img: require("@/assets/img/integration.svg"),
+      experiences:{
+        exp1:{
+          value: 1,
+          id: "code-exp1",
+          textFat: "Front End",
+          textSmall: "At Bridgestone"
+        },
+        exp2:{
+          value: 2,
+          id: "code-exp2",
+          textFat: "Front End",
+          textSmall: "At Shiftmeapp"
+        },
+        exp3:{
+          value: 3,
+          id: "code-exp3",
+          textFat: "Hackathon",
+          textSmall: "second place for the Datakathon organized by the CEPEGRA in 2017"
+        },
+        exp4:{
+          value: 4,
+          id: "code-exp4",
+          textFat: "Front End",
+          textSmall: "internship in MIGHDY"
         }
       }
     },
@@ -240,24 +306,6 @@ const experiences = {
         }
       }
     },
-    coding:{
-      id: "coding",
-      img: require("@/assets/img/integration.svg"),
-      experiences:{
-        exp1:{
-          value: 1,
-          id: "code-exp1",
-          textFat: "Hackathon:",
-          textSmall: "second place for the Datakathon organized by the CEPEGRA in 2017"
-        },
-        exp2:{
-          value: 2,
-          id: "code-exp2",
-          textFat: "Front End",
-          textSmall: "internship in MIGHDY"
-        }
-      }
-    },
     art:{
       id:"art",
       img: require("@/assets/img/artist.svg"),
@@ -265,7 +313,7 @@ const experiences = {
         exp1:{
           value: 1,
           id: "art-exp1",
-          textFat: "Art exhibition:",
+          textFat: "Art exhibition",
           textSmall: "Gallerie Koma, Simply Seen, On Air Studio, CALVAS en folie, Thanks galerie..."
         }
       }
@@ -361,7 +409,8 @@ export default new Vuex.Store({
     contentExhibitions,
     switchBtnsVal,
     experiences,
-    dnaMediaQueries
+    dnaMediaQueries,
+    presentation
   },
   mutations: mutations,
   getters: getters,

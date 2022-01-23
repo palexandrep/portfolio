@@ -5,6 +5,7 @@
 
 .sub-container-list-main-skills{
     display: flex;
+    justify-content: center;
     position: relative;
 }
 
@@ -33,6 +34,43 @@
     background: $white-col;
     border-radius: 100%;
 }
+
+.item-main-skills__top:nth-child(1){
+    .main-skills-decoration{
+        height: 30px;
+    }
+    .container--title-main-skills{
+        width: 80px;
+        height: 80px;
+    }
+}
+
+.item-main-skills__top:nth-child(3){
+    .main-skills-decoration{
+        height: 20px;
+    }
+    .container--title-main-skills{
+        width: 60px;
+        height: 60px;
+    }
+}
+
+.item-main-skills__bottom:nth-child(1){
+    .main-skills-decoration{
+        height: 10px;
+    }
+    .container--title-main-skills{
+        width: 70px;
+        height: 70px;
+    }
+}
+
+.item-main-skills__bottom:nth-child(2){
+    .main-skills-decoration{
+        height: 50px;
+    }
+}
+
 
 /*
 .title-main-skills{

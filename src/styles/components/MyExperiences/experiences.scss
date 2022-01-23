@@ -1,5 +1,5 @@
 .group--img-experience{
-    width: 50px;
+    width: 30px;
 }
 
 .container--img-experience{
@@ -27,28 +27,31 @@
 
 //------------ Experience separation
 
+$separation-height: 50px;
+$separation-width: calc((100%/3)*2);
+
 .experiences-separation{
-    width: calc((100%/3)*2);
+    width: $separation-width;
     margin-left: calc(100%/6);
 }
 
 .experiences-separation__top{
-    border-left: 2px solid $white-col;
-    border-bottom: 2px solid $white-col;
-    height: 48px;
+    border-left: 1px solid $white-col_pale;
+    //border-bottom: 1px solid $white-col_pale;
+    height: $separation-height - 2px;
     border-radius: 0 0 0$radius;
 }
 
 .group--experiences:nth-child(even) .experiences-separation__top{
-    border-right: 2px solid $white-col;
+    border-right: 1px solid $white-col_pale;
     border-left: none;
     border-radius: 0 0 $radius 0;
 }
 
 .experiences-separation__bottom{
-    border-right: 2px solid $white-col;
-    border-top: 2px solid $white-col;
-    height: 50px;
+    border-right: 1px solid $white-col_pale;
+    border-top: 1px solid $white-col_pale;
+    height: $separation-height;
     border-radius: 0 $radius 0 0;
     position: relative;
     top: -2px;
@@ -56,7 +59,7 @@
 }
 
 .group--experiences:nth-child(even) .experiences-separation__bottom{
-    border-left: 2px solid $white-col;
+    border-left: 1px solid $white-col_pale;
     border-right: none;
     border-radius: $radius 0 0 0;
     left: -3px;
@@ -70,4 +73,96 @@
 .container--img-experience__conclusion .group--img-experience{
     position: relative;
     left: 2px;
+}
+
+.experiences-separation__circle{
+    background-color: $white-col;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    margin-left: calc(100%/6);
+    position: relative;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    /*&::before {
+        content: '';
+        display: block;
+        width: 10px;
+        height: 10px;
+        background: red;
+        transform: translateX(5px) rotate(45deg);
+    }*/
+}
+
+.group--experiences:nth-child(even) .experiences-separation__circle {
+    transform: translateX(-4px);
+    animation-name: experience-circle-animation__even;
+    animation-delay: 4s;
+}
+
+.group--experiences:nth-child(odd) .experiences-separation__circle  {
+    transform: translateX(-4px);
+    animation-name: experience-circle-animation__odd;
+}
+
+@keyframes experience-circle-animation__odd {
+
+    0% {
+        top: 0;
+        left: 0;
+    }
+
+    5% {
+        top: $separation-height + 2px;
+        left: 0;
+    }
+
+    45% {
+        top: $separation-height + 2px;
+        left: $separation-width;
+        opacity: 1;
+    }
+
+    50% {
+        top: $separation-height * 3;
+        left: $separation-width;
+        opacity: 0;
+    }
+
+    100% {
+        top: $separation-height * 3;
+        left: $separation-width;
+        opacity: 0;
+    }
+}
+
+@keyframes experience-circle-animation__even {
+
+    0% {
+        top: 0;
+        left: $separation-width;
+    }
+
+    5% {
+        top: $separation-height + 2px;
+        left: $separation-width;
+    }
+
+    45% {
+        top: $separation-height + 2px;
+        left: -4px;
+        opacity: 1;
+    }
+
+    50% {
+        top: $separation-height * 3;
+        left: -4px;
+        opacity: 0;
+    }
+
+    100% {
+        top: $separation-height * 3;
+        left: -4px;
+        opacity: 0;
+    }
 }

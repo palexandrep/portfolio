@@ -9,6 +9,7 @@
   "dependencies": {
     "@glidejs/glide": "^3.2.4",
     "animejs": "^3.0.1",
+    "aos": "^2.3.4",
     "foundation-sites": "^6.5.1",
     "normalize.css": "^8.0.1",
     "vue": "^2.5.17",

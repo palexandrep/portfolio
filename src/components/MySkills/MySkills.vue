@@ -2,8 +2,10 @@
     <div class="container--skills">
         <SectionHeader id="my-skills" :lockerClassName="lockerClass" :sectionTitle="title"></SectionHeader>
         <span class="container--skills--content container-section-content">
-            <MainSkills/>
-            <SubSkills/>
+            <div class="sub-container--skills--content">
+                <MainSkills/>
+                <SubSkills/>
+            </div>
             <Preferences/>
         </span>
     </div>

@@ -5,11 +5,16 @@
     display: flex;
     justify-content: flex-end;
     position: fixed;
-    background: linear-gradient(0deg,$white-col_pale,darken($white-col_pale, 10%));
+    //background: linear-gradient(0deg,$white-col_pale,darken($white-col_pale, 10%));
+    background: $bgc-col;
     z-index: 15;
 
     .menu--item{
-        padding: 5px 40px;
+        padding: 0px 40px;
+    }
+
+    .menu--item-text__desktop{
+        margin: 5px 0;
     }
 }
 
@@ -22,10 +27,10 @@
     .container-menu__mobile{
         background: linear-gradient(90deg,$white-col_pale,$white-col);
         height: 100vh;
-        width: 90%;
+        width: 100%;
         position: fixed;
         z-index: 30;
-        right: -90%;
+        right: -100%;
         margin: 0;
     }
     

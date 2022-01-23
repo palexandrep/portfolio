@@ -11,4 +11,11 @@
         color: $white-col;
     }
 }
+
+.post--white{
+    background: darken($white-col, 12%);
+    .text{
+        color: $bgc-col;
+    }
+}
 // need to fix this!

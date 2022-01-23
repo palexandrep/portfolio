@@ -1,67 +1,49 @@
 .container--background{
     display: flex;
     .background-decoration{
-        @include hexagon(100px, (lighten($white-col_pale, 1%)), (solid 2px (lighten($white-col_pale, 5%))));
-        margin: 2px;
+        @include hexagon(50px, (lighten($white-col_pale, 1%)), (solid 2px (lighten($white-col_pale, 5%))));
         box-shadow: 10px 10px 50px darken($white-col_pale,10%);
+        margin: 9px 2px;
+        &:hover{
+            position: relative;
+            z-index: 14;
+            transform: scale(1.4);
+            transition: transform .5s;
+        }
     }
 }
 
-.container--background__bottom__right{
-    position: relative;
-    transform: translate(52px, 29px);
+.background-item--red {
+    //background-color: red !important;
 }
 
-.container--background__bottom__left{
-    position: relative;
-    transform: translate(0px, 58px);
+.background-item--empty {
+    visibility: hidden;
 }
 
-.background-decoration_2{
-    //transform: scale(1.2);
-    z-index: 100;
+.background-item--variation-big {
+    transform: scale(1.2);
+    position: relative;
+    z-index: 13;
     box-shadow: 10px 10px 50px darken($white-col_pale,20%);
 }
 
-.container-group--background__2{
-    transform: translate(52px, 87px);
+.background-item--variation-small {
+    transform: scale(.8);
+    position: relative;
+    z-index: 1;
+    box-shadow: 10px 10px 50px darken($white-col_pale,20%);
 }
 
 .container-global--background{
     position: absolute;
-    left: -50px;
-    top: 100px;
-    transform: scale(0.5);
+    left: 0px;
+    top: 0px;
+    overflow: hidden;
+    width: 99vw;
+    height: 100vh;
 }
 
-.container-group--background__3{
-    position: absolute;
-    left: 260px;
-    top: 272px;
-}
-
-.container-group--background__4{
-    position: absolute;
-    left: 104px;
-    top: 544px;
-}
-
-.container-group--background__5{
-    position: absolute;
-    left: 404px;
-    top: 504px;
-    transform: rotate(60deg);
-
-    .background-decoration{
-        //transform: scale(1.2);
-        z-index: 100;
-        box-shadow: 10px 10px 50px darken($white-col_pale,15%);
-    }
-
-    .background-decoration_2{
-        //transform: scale(1.2);
-        z-index: 100;
-        box-shadow: 10px 10px 50px darken($white-col_pale,20%);
-    }
-
+.container--background--pair {
+    transform: translate(26px, 0);
 }

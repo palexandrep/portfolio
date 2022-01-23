@@ -1,17 +1,27 @@
+
+
+//-------------------------- carousel preferences
+
 .container-swiper__custom-style{
     background-color: $white-col_pale;
     border-radius: 100%; 
 }
 
-.container-swiper__custom-style__small{
-    background-color: $white-col_pale;
-    border-radius: 100%;
-    transform: scale(0.8);  
-}
+
 
 .container--preference-text, .container-swiper__custom-style{
     width: 250px;
     height: 250px;
+}
+
+.container-swiper__custom-style__small{
+    background-color: $white-col_pale;
+    border-radius: 100%;
+    //transform: scale(0.7); 
+    width: 180px;
+    height: 180px;
+    margin-top: 30px;
+
 }
 
 .swiper-gallery--images__vertical-img{
@@ -31,27 +41,39 @@
     width: 250px;
 }
 
-.glide__track{
-    border-radius: $radius;
+.swiper-pagination{
+    position: initial !important;
 }
 
 .swiper-pagination__preferences {
-    width: 300px;
+    padding-top: 50px;
+    width: 80px;
     height: 50px;
     text-align: center;
     line-height: 20px;
     font-size: 12px;
     opacity: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
     .swiper-pagination-bullet{
-        width: 50px;
-        height: 50px;
-        color:#fff;
-        background: $white-col_pale !important;
+        width: 10px;
+        height: 10px;
+        color: red;
+        font-size: 40px;
+        background: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
       }
+
     .swiper-pagination-bullet-active {
         color:#fff;
         background: $mid-col !important;
       }
+
       .swiper-pagination-bullet-active:focus{
           outline: 0;
       }

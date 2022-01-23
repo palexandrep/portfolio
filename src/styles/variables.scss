@@ -1,13 +1,14 @@
 // colors
 
-$bgc-col: #0B0F1D;
+$bgc-col: desaturate(#0B0F1D, 20%);
 $bgc-col_pale: #1A1D28;
 $bgc-col_pale-opacity: rgba(26,29,40,0.2);
 $bgc-col_pale-gradient: linear-gradient(to right, rgba(26,29,40,0) 0%,rgba(26,29,40,1) 30%,rgba(26,29,40,1) 70%,rgba(26,29,40,0) 100%);
 $bgc-col_pale-gradient__to-right: rgb(3, 8, 24);
-$mid-col: #D24116;
+$mid-col: desaturate(#D24116, 10%);
 $white-col: #FFFFFF;
 $white-col_pale: #D8D8D8;
+$white-col_dark: #6e6e6e;
 
 // sizes
 

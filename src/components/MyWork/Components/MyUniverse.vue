@@ -2,6 +2,7 @@
     <span class="global-container-exhibitions">
         <SubSectionTitle :title="title"/>
         <SwiperCarousel :content="carouselComponent"/>
+        <div class="my-work__decoration-orbital"></div>
     </span>
 </template>
 
