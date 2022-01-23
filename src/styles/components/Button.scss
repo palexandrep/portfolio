@@ -28,6 +28,10 @@ button{
   fill: $bgc-col;
 }
 
+.btn__white{
+  fill: $white-col;
+}
+
 .btn--arrow__to-the-top{
   transform: rotate(180deg);
 }

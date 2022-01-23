@@ -206,7 +206,7 @@ const experiences = {
           value: 1,
           id: "learn-exp1",
           textFat: "Learning",
-          textSmall: "on my own"
+          textSmall: "On my own"
         },
         exp2:{
           value: 2,
@@ -236,25 +236,25 @@ const experiences = {
           value: 3,
           id: "design-exp3",
           textFat: "UI and newsletters",
-          textSmall: "integration for YAKimmo"
+          textSmall: "Integration for YAKimmo"
         },
         exp4:{
           value: 4,
           id: "design-exp4",
           textFat: "UI and UX",
-          textSmall: "for 'La Rondinella' website"
+          textSmall: "For 'La Rondinella' website"
         },
         exp5:{
           value: 5,
           id: "design-exp5",
           textFat: "Playzone",
-          textSmall: "participation in UI, UX and integration ( 2017 edition )"
+          textSmall: "Participation in UI, UX and integration ( 2017 edition )"
         },
         exp6:{
           value: 6,
           id: "design-exp6",
           textFat: "Web Design",
-          textSmall: "internship in Tacite"
+          textSmall: "Internship in Tacite"
         }
       }
     },
@@ -278,13 +278,13 @@ const experiences = {
           value: 3,
           id: "code-exp3",
           textFat: "Hackathon",
-          textSmall: "second place for the Datakathon organized by the CEPEGRA in 2017"
+          textSmall: "Second place for the Datakathon organized by the CEPEGRA in 2017"
         },
         exp4:{
           value: 4,
           id: "code-exp4",
           textFat: "Front End",
-          textSmall: "internship in MIGHDY"
+          textSmall: "Internship in MIGHDY"
         }
       }
     },
@@ -352,6 +352,12 @@ const switchBtnsVal = {
       }
     }
   }
+}
+
+//-----Link btns
+
+const linkBtns = {
+  mail: "piette.alexandre@gmail.com"
 }
 
 //--------------------- DNA length

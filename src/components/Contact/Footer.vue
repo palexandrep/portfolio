@@ -17,7 +17,7 @@ export default {
     data: function(){
         return{
             btnDir: "btn--arrow__to-the-top",
-            scrollTopColor: "btn__blue",
+            scrollTopColor: "btn__white",
             scrollLinkTarget: "#container--header__global",
             contributor: "@ Alexandre Piette 2018"
         }

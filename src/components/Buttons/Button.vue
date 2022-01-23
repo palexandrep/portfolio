@@ -3,7 +3,7 @@
         <!--<div class="bubble-container bubble-container--top">
             <BtnDecorations/>
         </div>-->
-        <a href="mailto:piette.alexandre@gmail.com" class="btn btn__call-to title title__small shadow">{{btnTitle}}</a>
+        <a :href="`mailto:${openLink}`" class="btn btn__call-to title title__small shadow">{{btnTitle}}</a>
         <!--<div class="bubble-container bubble-container--bottom">
             <BtnDecorations/>
         </div>-->
@@ -17,6 +17,7 @@ import {animateBtn} from '@/assets/js/animeFunctions'
 import {btnDecorationAnimate} from '@/assets/js/animeFunctions'
 //import BtnDecorations from '@/components/Buttons/Decoration/BtnDecorations.vue'
 import cvalexandrepiette from '@/assets/img/background/bgd1.jpg'
+import {mapGetters} from 'vuex'
 
 export default {
     name: 'Button',
@@ -29,6 +30,15 @@ export default {
             btnLink: ""
         }
     },
+    computed:{
+        ...mapGetters({
+            myState: 'getMyState'
+        }),
+
+        linkBtns(){
+            return this.$store.state.linkBtns;
+        }
+    },
     props:{
         btnTitle:{
         type: String,
@@ -38,10 +48,10 @@ export default {
     methods:{
         openLink(){
             if(this.btnTitle == "contact me"){
-                this.btnLink = "mailto:piette.alexandre@gmail.com"
+                return this.btnLink = this.linkBtns.mail;
             }
             if(this.btnTitle == "download my cv"){
-                this.btnLink = cvalexandrepiette
+                return this.btnLink = cvalexandrepiette
             }
         }
     }

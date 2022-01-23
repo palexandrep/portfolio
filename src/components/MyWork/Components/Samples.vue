@@ -4,7 +4,7 @@
         <ul class="container--sub-section container--samples" >
             <li class="grid-x container--samples-and-images" v-bind:key="sample.id" v-for="sample in samples" >
                 <div class="container-sample-and-decoration">
-                <a class="container-sample" @click.prevent="openLink" v-bind:href="sample.link">
+                <a class="container-sample" target="blank" v-bind:href="sample.link">
                     <div class="sample--plug-sample">
                         <img class="sample--plug-img-sample" v-bind:src="sample.picture" v-bind:alt="sample.title">
                     </div>
@@ -58,9 +58,6 @@ export default {
     methods:{
         distributeTitle: function(){
             return this.titleSubSection
-        },
-        openLink: function(e){
-        
         }
     }
 }
