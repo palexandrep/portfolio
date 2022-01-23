@@ -1,0 +1,19 @@
+.container--contact--content{
+
+    .btn__call-to {
+        color: $white-col;
+        background-color: $bgc-col;
+    }
+
+    @media screen and (min-width: 800px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 30vh;
+    
+        .container--btn__call-to {
+            margin: 0 20px;
+        }
+    }
+}
